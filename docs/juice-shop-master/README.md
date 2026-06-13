@@ -22,7 +22,9 @@ sudo apt update && sudo apt install -y virtualbox
 ``` 
 
 - Create a virtual machine running Kali Linux and Setup the Juice Shop on this VM.
-```https://www.kali.org/get-kali/#kali-platforms```
+```bash
+https://www.kali.org/get-kali/#kali-platforms
+``` 
 
 - Clone the Juice-Shop Repository
 ```bash
