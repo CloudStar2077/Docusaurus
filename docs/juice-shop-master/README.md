@@ -10,7 +10,7 @@ This guide focuses on the analysis and demonstration of typical web vulnerabilit
 # Table of Contents
  
 1.[Quickstart](#Quickstart) 
-2.[Password Hash Leak](#Password Hash Leak) 
+2.[Password Hash Leak](#Password-Hash-Leak) 
 
 
 ## Quickstart
@@ -46,4 +46,5 @@ npm install && npm start
 
 ## Password Hash Leak
 
+This challenge demonstrates how to intercept and analyze the password hash of a logged-in user with Burpsuite.
  
