@@ -5,7 +5,7 @@ The "Password Hash Leak" challenge from OWASP Juice Shop was successfully comple
 To identify the password hash run `burpsuite` on your Kali VM, its a Tool for intercepting, analyzing, and testing web traffic for security vulnerabilities.
 It functions as a kind of "man-in-the-middle" proxy between your browser and the website. This allows it to capture, display, and modify all data traffic.
 
-Login to the OWASP Juice Shop using the built in webbrowser from burpsuite and search for the JWT (Jason Web Token) in the Login Response.
+Log in to the OWASP Juice Shop using the built in webbrowser from burpsuite and search for the JWT (Jason Web Token) in the Login Response.
 
 <img width="1464" height="898" alt="burp1" src="https://github.com/user-attachments/assets/62ed4787-9745-4ed1-a271-0cb47b45b42a" />
 
