@@ -8,4 +8,6 @@ burpsuite
 ``` 
 Login to the OWASP Juice Shop and then search for the JWT (Jason Web Token) in the Login Response.
 
+<img width="1718" height="986" alt="burp1" src="https://github.com/user-attachments/assets/dcfe68be-87c7-442c-96f4-02aa3c4f1cd5" />
+
 
