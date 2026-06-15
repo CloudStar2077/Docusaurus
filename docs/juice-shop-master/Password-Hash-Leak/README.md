@@ -2,7 +2,7 @@
 
 The "Password Hash Leak" challenge from OWASP Juice Shop was successfully completed by identifying exposed password hashes and analyzing the resulting security risks.
 
-To identify the password hash run `burpsuite` on your Kali VM, a Tool for intercepting, analyzing, and testing web traffic for security vulnerabilities.
+To identify the password hash run `burpsuite` on your Kali VM, its a Tool for intercepting, analyzing, and testing web traffic for security vulnerabilities.
 It functions as a kind of "man-in-the-middle" proxy between your browser and the website. This allows it to capture, display, and modify all data traffic.
 
 Login to the OWASP Juice Shop using the built in webbrowser from burpsuite and search for the JWT (Jason Web Token) in the Login Response.
@@ -22,7 +22,7 @@ For decoding the Hash run `hashcat` using the rockyou.txt
 hashcat -m 0 -a 0 0192023a7bbd73250516f069df18b500 /usr/share/wordlists/rockyou.txt
 ```
 
-<img width="805" height="555" alt="hashcat" src="https://github.com/user-attachments/assets/54ccd809-7a4d-4a7f-ad71-8e914691dfc8" />
+<img width="782" height="549" alt="hashcat" src="https://github.com/user-attachments/assets/70937fc2-c01a-4db6-ba99-582ab668819c" />
 
 Look at the Output and you will see that Hashcat successfully cracked the MD5 hash and recovered the original plaintext password.
 
