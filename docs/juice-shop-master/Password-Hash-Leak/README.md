@@ -10,5 +10,12 @@ Login to the OWASP Juice Shop using the built in webbrowser from burpsuite and t
 
 <img width="1464" height="898" alt="burp1" src="https://github.com/user-attachments/assets/62ed4787-9745-4ed1-a271-0cb47b45b42a" />
 
+Anyone familiar with Base64 encoded strings will notice that a JWT looks very similar.
+To decode base64 to plain text you can use Cyberchef.
+```https://gchq.github.io/CyberChef/```
+
+
+
+
 
 
