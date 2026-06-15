@@ -1,6 +1,6 @@
 # Password Hash Leak
 
-The "Password Hash Leak" challenge from OWASP Juice Shop was successfully completed by identifying exposed password hashes and analyzing the resulting security risks.
+The "Password Hash Leak" challenge from the OWASP Juice Shop was successfully completed by identifying exposed password hashes and analyzing the resulting security risks.
 
 To identify the password hash run `burpsuite` on your Kali VM, its a Tool for intercepting, analyzing, and testing web traffic for security vulnerabilities.
 It functions as a kind of "man-in-the-middle" proxy between your browser and the website. This allows it to capture, display, and modify all data traffic.
