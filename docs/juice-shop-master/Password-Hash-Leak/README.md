@@ -23,6 +23,11 @@ For decoding the Hash run hashcat using a Wordlist.txt
 hashcat -m 0 -a 0 0192023a7bbd73250516f069df18b500 wordlist.txt
 ```
 
+<img width="810" height="544" alt="hashcat" src="https://github.com/user-attachments/assets/eb93c95a-66c7-44fe-9934-0bb2fb08bd40" />
+
+Look at the Output and you will see that Hashcat successfully cracked the MD5 hash and recovered the original plaintext password.
+
+
 
 
 
