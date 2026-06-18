@@ -11,7 +11,7 @@ http-history to find the request and send it to the burpsuite repeater.
 <img width="1532" height="913" alt="burpsuite" src="https://github.com/user-attachments/assets/dd85098c-6b1c-4128-b0c9-dabd81e50068" />
 
 To retrieve data from multiple tables, SQL provides the UNION operator. Its required because it is the only SQL operator that allows combining results from different tables into a single query response. Without it, the endpoint would only return data from the intended table (e.g., products) and not from other tables such as user data. For a UNION query to work, both SELECT statements must return the same number of columns and compatible data types.
-To detect the number of columns, modify the request in the Repeater by adding apple to the q parameter `(GET /rest/products/search?q=apple)` and send it.
+To detect the number of columns, modify the request in the Repeater by adding apple to the q parameter `GET /rest/products/search?q=apple` and send it.
 
 <img width="1332" height="958" alt="burpsuite2" src="https://github.com/user-attachments/assets/586bfa09-fee1-4a63-9a66-53bbb751786d" />
 
@@ -26,9 +26,11 @@ Copy the payload into CyberChef and use the URL Encoding function to make it usa
 
 <img width="1724" height="742" alt="cyberchef sql" src="https://github.com/user-attachments/assets/51086994-73d8-4900-b040-2ad3047beb8d" />
 
-Copy the output from Cyberchef into the repeater request in burpsuite. 
+Copy the output from Cyberchef into the repeater request in burpsuite and send it. The request Should look like this `GET /rest/products/search?q=apple'))UNION%20SELECT%20name,2,3,4,5,6,7,8,9%20FROM%20sqlite_master%20WHERE%20type='table'--`
 
-<img width="1330" height="1090" alt="burpsuite3" src="https://github.com/user-attachments/assets/dc8000e8-5581-4416-86b5-2f017b0b5b4f" />
+<img width="1342" height="611" alt="burpsuite3" src="https://github.com/user-attachments/assets/da52dab6-c042-42e6-ab13-16e83f6bf616" />
+
+In the response you can see the JSON array containing all database table names and columns, if you look closely, the table we need is called `Users`.
 
 
 
