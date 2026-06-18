@@ -38,16 +38,3 @@ After URL Encode `GET /rest/products/search?q=apple'))UNION%20SELECT%20id,email,
 <img width="1716" height="1074" alt="credentials" src="https://github.com/user-attachments/assets/6d6a3c64-d7db-4eee-a913-2bff41c88ac4" />
 
 Voilà, we got the User Credentials and solved the Challenge. With `Hashcat` we could now try to crack the password hashes.
-
-
-
-
-
-
-
-
-
-
-
-
-Copy The SQL-Union-Payload for getting the user credentials 
