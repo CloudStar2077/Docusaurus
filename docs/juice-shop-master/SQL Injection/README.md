@@ -1,6 +1,6 @@
 # Extracting user login credentials via SQL injection
 
-As part of this project, the "SQL injection" vulnerability in the OWASP Juice Shop application was investigated. The goal of the challenge was to gain access to 
+As part of this project, the vulnerability class CWE-89:SQL Injection (Common Weakness Enumeration) in the OWASP Juice Shop application was investigated. The goal of the challenge was to gain access to 
 stored user credentials by exploiting an insecure database query.
 
 To solve this Challenge run `burpsuite` on your Kali VM, its a Tool for intercepting, analyzing, and testing web traffic for security vulnerabilities. It functions as a kind of "man-in-the-middle" proxy between your browser and the website. This allows it to capture, display, and modify all data traffic.
