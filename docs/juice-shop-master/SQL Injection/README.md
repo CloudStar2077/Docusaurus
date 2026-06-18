@@ -38,3 +38,4 @@ After URL Encode `GET /rest/products/search?q=apple'))UNION%20SELECT%20id,email,
 <img width="1716" height="1074" alt="credentials" src="https://github.com/user-attachments/assets/6d6a3c64-d7db-4eee-a913-2bff41c88ac4" />
 
 Voilà, we obtained the user credentials and solved the challenge. Using Hashcat, we could attempt to crack the password hashes. They appear to be MD5 (32 hexadecimal characters), an old hashing algorithm that is now considered cryptographically broken. 
+The real vulnerability is that user input is interpreted directly as part of the SQL command instead of being treated strictly as data. The only complete solution is the consistent separation of code and data through parameterized queries (prepared statements) or correctly used ORM layers. Other measures like a Web Application Firewall (WAF) additionally reduce the risk, but do not replace the basic solution.
