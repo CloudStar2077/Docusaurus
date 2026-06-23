@@ -12,6 +12,7 @@ This guide focuses on the analysis and demonstration of typical web vulnerabilit
  
 1.[Quickstart](#Quickstart) 
 2.[Password Hash Leak](#Password-Hash-Leak) 
+3.[SQL Injection](#SQL-Injection) 
 
 
 ## Quickstart
@@ -52,3 +53,6 @@ npm install && npm start
 
 This challenge demonstrates how to intercept and analyze the password hash of a logged-in user with Burpsuite.
  
+## SQL Injection 
+
+This challenge demonstrates how a search endpoint can be exploited using a UNION-based SQL Injection to extract data from an entirely different database table.
