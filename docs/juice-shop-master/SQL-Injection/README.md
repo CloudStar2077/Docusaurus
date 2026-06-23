@@ -1,3 +1,9 @@
+---
+title: Extracting user login credentials via SQL Injection
+sidebar_label: SQL Injection
+sidebar_position: 2
+---
+
 # Extracting user login credentials via SQL injection
 
 As part of this project, the vulnerability class CWE-89:SQL Injection (Common Weakness Enumeration) in the OWASP Juice Shop application was investigated. The goal of the challenge was to gain access to 

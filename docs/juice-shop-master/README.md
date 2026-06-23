@@ -1,6 +1,7 @@
 # Juice Shop Master 
 
 This guide focuses on the analysis and demonstration of typical web vulnerabilities in the OWASP Juice Shop.
+
 > [!NOTE] 
 > This repo is for educational purposes.
 
