@@ -15,13 +15,6 @@ Run only on approved machines.
 :::
 
 
-# Table of Contents
- 
-1.[Quickstart](#Quickstart) 
-2.[Password Hash Leak](#Password-Hash-Leak) 
-3.[SQL Injection](#SQL-Injection) 
-
-
 ## Quickstart
 
 - Download and install VirtualBox
@@ -56,10 +49,15 @@ npm install && npm start
 
 - Check out the Juice-Shop and try to solve some challenges.
 
-## Password Hash Leak
+## Challenges
 
+### Password Hash Leak
 This challenge demonstrates how to intercept and analyze the password hash of a logged-in user with Burpsuite.
- 
-## SQL Injection 
 
+[→ Go to Challenge](/docs/juice-shop-master/Password-Hash-Leak)
+
+### SQL Injection
 This challenge demonstrates how a search endpoint can be exploited using a UNION-based SQL Injection to extract data from an entirely different database table.
+
+[→ Go to Challenge](/docs/juice-shop-master/SQL-Injection)
+
