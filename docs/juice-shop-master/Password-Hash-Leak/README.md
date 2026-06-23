@@ -11,8 +11,10 @@ Log in to the OWASP Juice Shop using the built in webbrowser from burpsuite and 
 
 Anyone familiar with Base64 encoded strings will notice that the JWT looks very similar.
 To decode base64 to plain text you can use Cyberchef ```https://gchq.github.io/CyberChef/```. Copy the JWT into cyberchef then analyze the plain text output.
-> [!IMPORTANT]
-> A JWT is not encrypted—only encoded. Anyone who has the token can read the payload.
+
+:::important
+A JWT is not encrypted—only encoded. Anyone who has the token can read the payload.
+:::
 
 <img width="1717" height="873" alt="cyberchef" src="https://github.com/user-attachments/assets/ee81ccd8-66cf-4ce9-84f9-549e2e95150f" />
 
