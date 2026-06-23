@@ -2,6 +2,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const remarkGithubAlerts = require('remark-github-alerts');
+
 const config: Config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
@@ -29,8 +31,9 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-        },
+  sidebarPath: './sidebars.ts',
+  remarkPlugins: [remarkGithubAlerts],
+},
         blog: {
           showReadingTime: true,
           feedOptions: {
