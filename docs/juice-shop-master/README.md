@@ -14,6 +14,11 @@ This repo is for educational purposes.
 Run only on approved machines.
 :::
 
+# Table of Contents
+
+1. [Quickstart](#Quickstart) 
+2. [Challenges](#Challenges)
+
 
 ## Quickstart
 
