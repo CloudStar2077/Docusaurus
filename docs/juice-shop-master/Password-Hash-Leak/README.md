@@ -37,7 +37,7 @@ Edit the `juice-shop/lib/insecurity.ts` to close this vulnerbility
 ## comment out the insecure line ##
 // jwt.sign(user, privateKey, { expiresIn: '6h', algorithm: 'RS256' })
 
-## new more save line ##
+## new more secure line ##
 jwt.sign({ id: user.id, email: user.email, role: user.role, isActive: user.isActive }, privateKey, { expiresIn: '6h', algorithm: 'RS256' })
 ```
 

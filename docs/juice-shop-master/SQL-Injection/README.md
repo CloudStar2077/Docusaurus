@@ -57,7 +57,7 @@ Edit the `search.ts` in `/juice-shop/routes` to close this vulnerbility
 ## comment out the insecure line ##
 // models.sequelize.query(`SELECT * FROM Products WHERE ((name LIKE '%${criteria}%' OR description LIKE '%${criteria}%') AND deletedAt IS NULL) ORDER BY name`)
 
-## new more save line ##
+## new more secure line ##
 models.sequelize.query(
   `SELECT * FROM Products WHERE ((name LIKE :criteria OR description LIKE :criteria) AND deletedAt IS NULL) ORDER BY name`,
   { replacements: { criteria: `%${criteria}%` } }
