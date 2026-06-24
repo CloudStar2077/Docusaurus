@@ -32,6 +32,8 @@ Look at the Output and you will see that Hashcat successfully cracked the MD5 ha
 
 This challenge taught us: Never write a password or password hash into a JWT. Never return password hashes to clients. The hash remains exclusively on the server side in the database. API responses contain only status and user information, without security data. Do not use MD5 anymore, as it is outdated and insecure. A best practice nowadays is to use a modern Key Derivation Function (KDF) like Argon2, which incorporates a unique salt for each password, ensuring that even identical passwords will always produce different hashes. But keep in mind that even a unique hash provides little protection if the original password is weak, use passwords that are long, complex, and truly random, combining uppercase and lowercase letters, numbers, and special characters. Furthermore, all communication must be encrypted via HTTPS/TLS. Without it, even a strong password is exposed in plaintext during transmission !
 
+https://www.loom.com/share/2e35d08b591f478da23e5687627a5a50
+
 
 
 

@@ -37,3 +37,7 @@
 article {
   max-width: 100% !important;
 }
+
+.markdown img {
+  cursor: zoom-in;
+}

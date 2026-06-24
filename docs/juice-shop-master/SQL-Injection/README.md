@@ -1,9 +1,3 @@
----
-title: Extracting user login credentials via SQL Injection
-sidebar_label: SQL Injection
-sidebar_position: 2
----
-
 # Extracting user login credentials via SQL injection
 
 As part of this project, the vulnerability class CWE-89:SQL Injection (Common Weakness Enumeration) in the OWASP Juice Shop application was investigated. The goal of the challenge was to gain access to 
@@ -56,3 +50,5 @@ GET /rest/products/search?q=apple'))UNION%20SELECT%20id,email,password,4,5,6,7,8
 
 Voilà, we obtained the user credentials and solved the challenge. Using Hashcat, we could attempt to crack the password hashes. They appear to be MD5 (32 hexadecimal characters), an old hashing algorithm that is now considered cryptographically broken. 
 The real vulnerability is that user input is interpreted directly as part of the SQL command instead of being treated strictly as data. The only complete solution is the consistent separation of code and data through parameterized queries (prepared statements) or correctly used ORM layers. Other measures like a Web Application Firewall (WAF) additionally reduce the risk, but do not replace the basic solution.
+
+https://www.loom.com/share/5cfe222b3fb74c36addb4c59136ac9d5
