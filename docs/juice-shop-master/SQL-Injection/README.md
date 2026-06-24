@@ -51,4 +51,17 @@ GET /rest/products/search?q=apple'))UNION%20SELECT%20id,email,password,4,5,6,7,8
 Voilà, we obtained the user credentials and solved the challenge. Using Hashcat, we could attempt to crack the password hashes. They appear to be MD5 (32 hexadecimal characters), an old hashing algorithm that is now considered cryptographically broken. 
 The real vulnerability is that user input is interpreted directly as part of the SQL command instead of being treated strictly as data. The only complete solution is the consistent separation of code and data through parameterized queries (prepared statements) or correctly used ORM layers. Other measures like a Web Application Firewall (WAF) additionally reduce the risk, but do not replace the basic solution.
 
+Edit the `search.ts` in `/juice-shop/routes` to close this vulnerbility
+
+```bash
+## comment out the insecure line ##
+// models.sequelize.query(`SELECT * FROM Products WHERE ((name LIKE '%${criteria}%' OR description LIKE '%${criteria}%') AND deletedAt IS NULL) ORDER BY name`)
+
+## new more save line ##
+models.sequelize.query(
+  `SELECT * FROM Products WHERE ((name LIKE :criteria OR description LIKE :criteria) AND deletedAt IS NULL) ORDER BY name`,
+  { replacements: { criteria: `%${criteria}%` } }
+).then(([products]: any) => {
+```
+
 https://www.loom.com/share/5cfe222b3fb74c36addb4c59136ac9d5
