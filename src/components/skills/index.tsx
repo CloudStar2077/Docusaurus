@@ -11,12 +11,12 @@ const skills: Skill[] = [
   {
     name: 'HTML',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-    description: ['Semantic markup', 'Accessible structure', 'SEO best practices', 'Forms and validation'],
+    description: ['Semantic markup', 'Accessible structure', 'Forms and validation'],
   },
   {
     name: 'CSS',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-    description: ['Responsive layouts', 'Flexbox and Grid', 'Animations', 'CSS Modules'],
+    description: ['Responsive layouts', 'Custom styling', 'CSS Modules'],
   },
   {
     name: 'Static Site Generator',
