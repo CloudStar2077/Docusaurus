@@ -108,12 +108,7 @@ const skills: Skill[] = [
   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
   description: ['Web development basics', 'Server-side scripting', 'Form handling', 'Database integration'],
 },
-  {
-    name: 'PHP',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
-    description: ['Web development basics', 'Server-side scripting', 'Form handling', 'Database integration'],
-  },
-];
+ ];
 
 export default function Skills() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
