@@ -16,7 +16,7 @@ const skills: Skill[] = [
   {
     name: 'CSS',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-    description: ['CSS Modules', 'Flexbox and Grid', 'Responsive layouts', 'Media queries'],
+    description: ['CSS Modules', 'Flexbox and Grid', 'Responsive layouts'],
   },
   {
     name: 'Static Site Generator',
@@ -26,7 +26,7 @@ const skills: Skill[] = [
   {
     name: 'Python',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-    description: ['Security tooling', 'Port scanner', 'Hash cracker', 'SSH brute-forcer'],
+    description: ['Security tooling', 'Flask & Django', 'Build APIs', 'Backend automation'],
   },
   {
     name: 'Shell Scripting',
@@ -51,7 +51,7 @@ const skills: Skill[] = [
   {
     name: 'IT Security',
     icon: '/Docusaurus/img/security.svg',
-    description: ['Penetration testing', 'OWASP Top 10', 'Vulnerability analysis', 'Burp Suite'],
+    description: ['Penetration testing', 'OWASP Top 10', 'Vulnerability analysis', 'Burp Suite', 'Linux Server hardening'],
   },
   {
     name: 'SQL',
@@ -61,7 +61,7 @@ const skills: Skill[] = [
   {
     name: 'Linux',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
-    description: ['LPIC-1 certified', 'System administration', 'Kali Linux', 'Shell & file management'],
+    description: ['LPIC-1 certified', 'System administration', 'Kali Linux'],
   },
   {
     name: 'Windows',
