@@ -11,12 +11,12 @@ const skills: Skill[] = [
   {
     name: 'HTML',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-    description: ['Semantic markup', 'Accessible structure', 'Forms and validation'],
+    description: ['Semantic markup', 'Accessible structure', 'Forms and validation', 'Tables and lists'],
   },
   {
     name: 'CSS',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-    description: ['Responsive layouts', 'Custom styling', 'CSS Modules'],
+    description: ['CSS Modules', 'Flexbox and Grid', 'Responsive layouts', 'Media queries'],
   },
   {
     name: 'Static Site Generator',
@@ -26,7 +26,7 @@ const skills: Skill[] = [
   {
     name: 'Python',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-    description: ['Security tooling', 'Django & Flask', 'Build APIs', 'Backend automation'],
+    description: ['Security tooling', 'Port scanner', 'Hash cracker', 'SSH brute-forcer'],
   },
   {
     name: 'Shell Scripting',
@@ -51,7 +51,22 @@ const skills: Skill[] = [
   {
     name: 'IT Security',
     icon: '/Docusaurus/img/security.svg',
-    description: ['Penetration testing', 'OWASP Top 10', 'Vulnerability analysis', 'Burp Suite', 'Linux server hardening'],
+    description: ['Penetration testing', 'OWASP Top 10', 'Vulnerability analysis', 'Burp Suite'],
+  },
+  {
+    name: 'SQL',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+    description: ['Relational databases', 'SQL queries', 'SQL Injection attacks', 'Database security'],
+  },
+  {
+    name: 'Linux',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+    description: ['LPIC-1 certified', 'System administration', 'Kali Linux', 'Shell & file management'],
+  },
+  {
+    name: 'Windows',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg',
+    description: ['Active Directory', 'Windows Server', 'PowerShell scripting', 'User management'],
   },
 ];
 
