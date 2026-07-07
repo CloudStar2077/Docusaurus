@@ -57,6 +57,11 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
+      logo: {
+        alt: 'Home',
+        src: 'img/docusaurus.png',
+        href: '/Docusaurus/',
+      },
   title: '',
   items: [
         {
