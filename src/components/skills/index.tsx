@@ -4,7 +4,12 @@ import styles from './skills.module.css';
 interface Skill {
   name: string;
   icon: string;
-  description: string[];
+  description: string[  {
+    name: 'PHP',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+    description: ['Web development basics', 'Server-side scripting', 'Form handling', 'Database integration'],
+  },
+];
 }
 
 const skills: Skill[] = [
@@ -97,6 +102,16 @@ const skills: Skill[] = [
     name: 'Monitoring',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg',
     description: ['Zabbix', 'Grafana', 'System monitoring', 'Alerting'],
+  },
+  {
+  name: 'PHP',
+  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+  description: ['Web development basics', 'Server-side scripting', 'Form handling', 'Database integration'],
+},
+  {
+    name: 'PHP',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+    description: ['Web development basics', 'Server-side scripting', 'Form handling', 'Database integration'],
   },
 ];
 
