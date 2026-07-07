@@ -57,12 +57,8 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: '',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
-      items: [
+  title: '',
+  items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
