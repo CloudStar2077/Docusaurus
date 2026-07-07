@@ -1,15 +1,11 @@
+cat > ~/Docusaurus/src/components/skills/index.tsx << 'EOF'
 import { useState } from 'react';
 import styles from './skills.module.css';
 
 interface Skill {
   name: string;
   icon: string;
-  description: string[  {
-    name: 'PHP',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
-    description: ['Web development basics', 'Server-side scripting', 'Form handling', 'Database integration'],
-  },
-];
+  description: string[];
 }
 
 const skills: Skill[] = [
@@ -74,11 +70,11 @@ const skills: Skill[] = [
     description: ['Active Directory', 'Windows Server', 'PowerShell scripting', 'User management'],
   },
   {
-  name: 'Networking',
-  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg',
-  description: ['Router & firewall configuration', 'VoIP setup and maintenance', 'NAS server management', 'Network troubleshooting', 'WLAN configuration'],
-},
- {
+    name: 'Networking',
+    icon: '/Docusaurus/img/network.svg',
+    description: ['Router & firewall configuration', 'VoIP setup and maintenance', 'NAS server management', 'Network troubleshooting', 'WLAN configuration'],
+  },
+  {
     name: 'Virtualization',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
     description: ['KVM', 'Hyper-V', 'VirtualBox', 'VM management'],
@@ -104,11 +100,11 @@ const skills: Skill[] = [
     description: ['Zabbix', 'Grafana', 'System monitoring', 'Alerting'],
   },
   {
-  name: 'PHP',
-  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
-  description: ['Web development basics', 'Server-side scripting', 'Form handling', 'Database integration'],
-},
- ];
+    name: 'PHP',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+    description: ['Web development basics', 'Server-side scripting', 'Form handling', 'Database integration'],
+  },
+];
 
 export default function Skills() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -147,3 +143,4 @@ export default function Skills() {
     </section>
   );
 }
+EOF
