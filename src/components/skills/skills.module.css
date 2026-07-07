@@ -39,6 +39,9 @@
 }
 
 .icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
   font-size: 2rem;
 }
 

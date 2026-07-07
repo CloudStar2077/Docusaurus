@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <p className={styles.copy}>
-          © {new Date().getFullYear()} Max Mustermann · Built with Docusaurus
+          © {new Date().getFullYear()} Vladimir Ivić · Built with Docusaurus
         </p>
         <div className={styles.links}>
           <a href="https://github.com/CloudStar2077" target="_blank" rel="noreferrer">GitHub</a>

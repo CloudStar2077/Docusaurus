@@ -3,18 +3,42 @@ import styles from './skills.module.css';
 interface Skill {
   name: string;
   icon: string;
+  description?: string;
 }
 
 const skills: Skill[] = [
-  { name: 'HTML', icon: '🌐' },
-  { name: 'CSS', icon: '🎨' },
-  { name: 'Static Site Generator', icon: '⚙️' },
-  { name: 'Python', icon: '🐍' },
-  { name: 'Shell Scripting', icon: '💻' },
-  { name: 'YAML', icon: '📄' },
-  { name: 'Container', icon: '🐳' },
-  { name: 'CI/CD with GitHub Actions', icon: '🔄' },
-  { name: 'IT Security', icon: '🛡️' },
+  {
+    name: 'CSS',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+  },
+  {
+    name: 'Static Site Generator',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docusaurus/docusaurus-original.svg',
+  },
+  {
+    name: 'Python',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+  },
+  {
+    name: 'Shell Scripting',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg',
+  },
+  {
+    name: 'YAML',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yaml/yaml-original.svg',
+  },
+  {
+    name: 'Container',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+  },
+  {
+    name: 'CI/CD with GitHub Actions',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg',
+  },
+  {
+    name: 'IT Security',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+  },
 ];
 
 export default function Skills() {
@@ -25,7 +49,7 @@ export default function Skills() {
         <div className={styles.grid}>
           {skills.map((skill: Skill) => (
             <div key={skill.name} className={styles.card}>
-              <span className={styles.icon}>{skill.icon}</span>
+              <img src={skill.icon} alt={skill.name} className={styles.icon} />
               <span className={styles.label}>{skill.name}</span>
             </div>
           ))}
