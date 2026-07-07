@@ -1,4 +1,3 @@
-cat > ~/Docusaurus/src/components/skills/index.tsx << 'EOF'
 import { useState } from 'react';
 import styles from './skills.module.css';
 
@@ -143,4 +142,3 @@ export default function Skills() {
     </section>
   );
 }
-EOF
