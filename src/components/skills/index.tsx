@@ -16,7 +16,7 @@ const skills: Skill[] = [
   },
   {
     name: 'Static Site Generator',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docusaurus/docusaurus-original.svg',
   },
   {
     name: 'Python',
@@ -24,7 +24,7 @@ const skills: Skill[] = [
   },
   {
     name: 'Shell Scripting',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+    icon: '/img/terminal.svg',
   },
   {
     name: 'YAML',
@@ -40,7 +40,7 @@ const skills: Skill[] = [
   },
   {
     name: 'IT Security',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg',
+    icon: '/img/security.svg',
   },
 ];
 
