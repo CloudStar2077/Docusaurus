@@ -57,3 +57,14 @@
     justify-content: center;
   }
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
