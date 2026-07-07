@@ -86,7 +86,7 @@ const skills: Skill[] = [
   {
     name: 'React',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-    description: ['Functional components', 'Hooks', 'CSS Modules', 'Portfolio development'],
+    description: ['Functional components', 'CSS Modules', 'Portfolio development'],
   },
   {
     name: 'TypeScript',
