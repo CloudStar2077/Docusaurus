@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const remarkGithubAlerts = require('remark-github-alerts');
 
 const config: Config = {
-  title: 'My Site',
+  title: '',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -57,7 +57,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
