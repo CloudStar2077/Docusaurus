@@ -7,6 +7,10 @@ interface Skill {
 
 const skills: Skill[] = [
   {
+    name: 'HTML',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+  },
+  {
     name: 'CSS',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
   },
@@ -20,7 +24,7 @@ const skills: Skill[] = [
   },
   {
     name: 'Shell Scripting',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
   },
   {
     name: 'YAML',
@@ -36,7 +40,7 @@ const skills: Skill[] = [
   },
   {
     name: 'IT Security',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg',
   },
 ];
 
