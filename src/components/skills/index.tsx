@@ -3,7 +3,6 @@ import styles from './skills.module.css';
 interface Skill {
   name: string;
   icon: string;
-  description?: string;
 }
 
 const skills: Skill[] = [
@@ -13,7 +12,7 @@ const skills: Skill[] = [
   },
   {
     name: 'Static Site Generator',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docusaurus/docusaurus-original.svg',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
   },
   {
     name: 'Python',
@@ -21,7 +20,7 @@ const skills: Skill[] = [
   },
   {
     name: 'Shell Scripting',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg',
   },
   {
     name: 'YAML',
@@ -37,7 +36,7 @@ const skills: Skill[] = [
   },
   {
     name: 'IT Security',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg',
   },
 ];
 
