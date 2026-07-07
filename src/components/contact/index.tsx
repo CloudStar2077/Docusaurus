@@ -10,22 +10,20 @@ export default function Contact() {
       <div className={styles.inner}>
         <div className={styles.left}>
           <h2 className={styles.heading}>Contact me</h2>
-          <p className={styles.intro}>Include the Information like:</p>
           <ul className={styles.list}>
             <li>Feel free to reach out with job offers or opportunities like...</li>
-            <li>What role are you looking for?</li>
-            <li>How you will contribute to the new team.</li>
-            <li>Are you open for remote work or even relocate?</li>
+            <li>DevSecOps Engineer, Cloud Engineer, System Engineer,</li>
+            <li>I am open for remote work</li>
           </ul>
         </div>
         <div className={styles.right}>
           <p className={styles.tagline}>Looking forward to hearing from you!</p>
           <div className={styles.links}>
-            <a href="mailto:deine@email.de" className={styles.link}>
+            <a href="mailto:vladimir.ivic@gmx.de" className={styles.link}>
               <span className={styles.linkIcon}>✉️</span>
-              deine@email.de
+              vladimir.ivic@gmx.de
             </a>
-            <a href="https://linkedin.com/in/deinprofil" target="_blank" rel="noreferrer" className={styles.link}>
+            <a href="https://www.linkedin.com/in/vladimir-ivic-9144b7332/" target="_blank" rel="noreferrer" className={styles.link}>
               <span className={styles.linkIcon}>🔗</span>
               Profile Page
             </a>
