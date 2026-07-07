@@ -6,7 +6,7 @@ export default function Hero() {
       <div className={styles.content}>
         <div className={styles.text}>
           <p className={styles.greeting}>Hey there 👋 I am</p>
-          <h1 className={styles.name}>Vladimir Ivic</h1>
+          <h1 className={styles.name}>Vladimir Ivić</h1>
           <p className={styles.title}>DevSecOps Engineer</p>
           <p className={styles.bio}>
             Passionate about cybersecurity, software development, and IT operations. 
