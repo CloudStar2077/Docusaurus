@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const remarkGithubAlerts = require('remark-github-alerts');
 
 const config: Config = {
-  title: '',
+  title: 'My Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
