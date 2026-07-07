@@ -68,6 +68,11 @@ const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg',
     description: ['Active Directory', 'Windows Server', 'PowerShell scripting', 'User management'],
   },
+  {
+  name: 'Networking',
+  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg',
+  description: ['Router & firewall configuration', 'VoIP setup and maintenance', 'NAS server management', 'Network troubleshooting', 'WLAN configuration'],
+},
 ];
 
 export default function Skills() {
