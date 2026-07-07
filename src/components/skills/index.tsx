@@ -73,6 +73,31 @@ const skills: Skill[] = [
   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg',
   description: ['Router & firewall configuration', 'VoIP setup and maintenance', 'NAS server management', 'Network troubleshooting', 'WLAN configuration'],
 },
+ {
+    name: 'Virtualization',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+    description: ['KVM', 'Hyper-V', 'VirtualBox', 'VM management'],
+  },
+  {
+    name: 'Git',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+    description: ['Version control', 'GitHub', 'Branching & merging', 'CI/CD integration'],
+  },
+  {
+    name: 'React',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+    description: ['Functional components', 'Hooks', 'CSS Modules', 'Portfolio development'],
+  },
+  {
+    name: 'TypeScript',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+    description: ['Type safety', 'Interfaces', 'Component typing', 'No any types'],
+  },
+  {
+    name: 'Monitoring',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg',
+    description: ['Zabbix', 'Grafana', 'System monitoring', 'Alerting'],
+  },
 ];
 
 export default function Skills() {
