@@ -71,8 +71,7 @@ const skills: Skill[] = [
   {
     name: 'Networking',
     icon: '/Docusaurus/img/network.svg',
-    description: ['Router & firewall configuration', 'VoIP setup and maintenance', 'NAS server management', 'Network troubleshooting', 'WLAN configuration', 'Virtual machine deployment and management', 
-      'Virtual networking configuration'],
+    description: ['Router & firewall configuration', 'VoIP setup and maintenance', 'NAS server management', 'Network troubleshooting', 'WLAN configuration', 'Virtual machine deployment and management'],
   },
   {
     name: 'Virtualization',
