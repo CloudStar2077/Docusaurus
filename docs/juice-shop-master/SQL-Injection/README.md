@@ -63,5 +63,3 @@ models.sequelize.query(
   { replacements: { criteria: `%${criteria}%` } }
 ).then(([products]: any) => {
 ```
-
-https://www.loom.com/share/5cfe222b3fb74c36addb4c59136ac9d5

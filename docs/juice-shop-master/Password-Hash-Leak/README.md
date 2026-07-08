@@ -42,9 +42,6 @@ jwt.sign({ id: user.id, email: user.email, role: user.role, isActive: user.isAct
 ```
 
 
-https://www.loom.com/share/2e35d08b591f478da23e5687627a5a50
-
-
 
 
 
