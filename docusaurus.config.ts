@@ -14,7 +14,7 @@ const config: Config = {
   },
 
   url: 'https://cloudstar2077.github.io',
-  baseUrl: '/mysite/',
+  baseUrl: '/Docusaurus/',
 
   organizationName: 'CloudStar2077',
   projectName: '/Docusaurus/',
