@@ -59,6 +59,18 @@
   align-items: flex-start;
 }
 
+.cardImageWrapper {
+  width: 220px;
+  height: 180px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 1.5rem;
+}
+
 .cardImage {
   width: 260px;
   height: 180px;
@@ -151,7 +163,19 @@
   .card {
     flex-direction: column;
   }
-  .cardImage {
+  .cardImageWrapper {
+  width: 220px;
+  height: 180px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 1.5rem;
+}
+
+.cardImage {
     width: 100%;
     height: 180px;
   }

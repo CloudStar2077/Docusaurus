@@ -18,7 +18,7 @@ const projects: Project[] = [
     tags: ['Python', 'Docker', 'Django'],
     docLink: '/Docusaurus/docs/baby-tools-shop',
     githubLink: 'https://github.com/CloudStar2077/baby-tools-shop',
-    image: 'https://via.placeholder.com/300x200?text=Baby+Tools+Shop',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
   },
   {
     title: 'Conduit Container',
@@ -26,7 +26,7 @@ const projects: Project[] = [
     tags: ['Docker', 'Django', 'Angular', 'Nginx'],
     docLink: '/Docusaurus/docs/conduit-container',
     githubLink: 'https://github.com/CloudStar2077/Conduit-Container',
-    image: 'https://via.placeholder.com/300x200?text=Conduit+Container',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
   },
   {
     title: 'Conduit Deployment',
@@ -34,7 +34,7 @@ const projects: Project[] = [
     tags: ['CI/CD', 'GitHub Actions', 'Docker', 'SSH'],
     docLink: '/Docusaurus/docs/conduit-deployment',
     githubLink: 'https://github.com/CloudStar2077/Conduit-Deployment',
-    image: 'https://via.placeholder.com/300x200?text=Conduit+Deployment',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg',
   },
   {
     title: 'Juice Shop Master',
@@ -42,7 +42,7 @@ const projects: Project[] = [
     tags: ['Security', 'OWASP', 'Writeups'],
     docLink: '/Docusaurus/docs/juice-shop-master',
     githubLink: 'https://github.com/CloudStar2077/Juice-Shop-Master',
-    image: 'https://via.placeholder.com/300x200?text=Juice+Shop+Master',
+    image: '/Docusaurus/img/security.svg',
   },
   {
     title: 'Minecraft Gaming Server',
@@ -50,7 +50,7 @@ const projects: Project[] = [
     tags: ['Docker', 'Java', 'Gaming'],
     docLink: '/Docusaurus/docs/minecraft-gaming-server',
     githubLink: 'https://github.com/CloudStar2077/Minecraft-Gaming-Server',
-    image: 'https://via.placeholder.com/300x200?text=Minecraft+Server',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
   },
   {
     title: 'Truck Signs API',
@@ -58,7 +58,7 @@ const projects: Project[] = [
     tags: ['Python', 'Django', 'Docker', 'Nginx'],
     docLink: '/Docusaurus/docs/truck-signs-api',
     githubLink: 'https://github.com/CloudStar2077/truck_signs_api',
-    image: 'https://via.placeholder.com/300x200?text=Truck+Signs+API',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
   },
   {
     title: 'V-Server Setup',
@@ -66,7 +66,7 @@ const projects: Project[] = [
     tags: ['Linux', 'Nginx', 'SSH', 'Security'],
     docLink: '/Docusaurus/docs/v-server-setup',
     githubLink: 'https://github.com/CloudStar2077/V-Server-Setup',
-    image: 'https://via.placeholder.com/300x200?text=V-Server+Setup',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg',
   },
   {
     title: 'WordPress',
@@ -74,7 +74,7 @@ const projects: Project[] = [
     tags: ['WordPress', 'Docker', 'Shell'],
     docLink: '/Docusaurus/docs/wordpress',
     githubLink: 'https://github.com/CloudStar2077/wordpress',
-    image: 'https://via.placeholder.com/300x200?text=WordPress',
+    image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg',
   },
 ];
 
@@ -100,14 +100,14 @@ export default function Projects() {
             ))}
           </ol>
           <div className={styles.card}>
-            <img src={active.image} alt={active.title} className={styles.cardImage} />
+            <div className={styles.cardImageWrapper}>
+              <img src={active.image} alt={active.title} className={styles.cardImage} />
+            </div>
             <div className={styles.cardContent}>
               <h3 className={styles.cardTitle}>{active.title}</h3>
               <div className={styles.tags}>
                 {active.tags.map((t: string) => (
-                  <span key={t} className={styles.tag}>
-                    {t}
-                  </span>
+                  <span key={t} className={styles.tag}>{t}</span>
                 ))}
               </div>
               <p className={styles.cardDesc}>{active.description}</p>
