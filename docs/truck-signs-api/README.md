@@ -4,7 +4,7 @@ sidebar_position: 6
 
 <div align="center">
 
-![Truck Signs](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Truck_Signs_logo.png)
+![Truck Signs](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/maihttps://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Truck_Signs_logo.png)
 
 # Signs for Trucks
 
@@ -114,22 +114,22 @@ __NOTE:__ To create Truck vinyls with Truck logos in them, first create the __Ca
 
 <div align="center">
 
-![alt text](./screenshots/Admin_Panel_View_Mobile.png)  ![alt text](./screenshots/Admin_Panel_View_Mobile_2.png) ![alt text](./screenshots/Admin_Panel_View_Mobile_3.png)
+![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View_Mobile.png)  ![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View_Mobile_2.png) ![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View_Mobile_3.png)
 
 </div>
 ---
 
 ### Desktop View
 
-![alt text](./screenshots/Admin_Panel_View.png)
+![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View.png)
 
 ---
 
-![alt text](./screenshots/Admin_Panel_View_2.png)
+![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View_2.png)
 
 ---
 
-![alt text](./screenshots/Admin_Panel_View_3.png)
+![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View_3.png)
 
 
 
