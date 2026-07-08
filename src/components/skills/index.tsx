@@ -60,7 +60,7 @@ const skills: Skill[] = [
   },
   {
     name: 'Linux',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+    icon: '/Docusaurus/img/virtualization.svg',
     description: ['LPIC-1 certified', 'System administration', 'Kali Linux'],
   },
   {
@@ -75,7 +75,7 @@ const skills: Skill[] = [
   },
   {
     name: 'Virtualization',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+    icon: '/Docusaurus/img/virtualization.svg',
     description: ['KVM', 'Hyper-V', 'VirtualBox', 'VM management'],
   },
   {
