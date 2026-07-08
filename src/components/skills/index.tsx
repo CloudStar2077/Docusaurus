@@ -91,8 +91,13 @@ const skills: Skill[] = [
   {
     name: 'TypeScript',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-    description: ['Type safety', 'Interfaces', 'Component typing', 'No any types'],
+    description: ['Interfaces', 'Component typing', 'No any types'],
   },
+  {
+    name: 'Angular',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+    description: ['Component development', 'Routing', 'REST API integration', 'Reactive forms', 'HTTP client', 'Authentication'],
+},
   {
     name: 'Monitoring',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg',
