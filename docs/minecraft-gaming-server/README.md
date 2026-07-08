@@ -8,9 +8,9 @@ Setup and host your own Java based Minecraft Gaming Server in a Docker Container
 
 # Table of Contents
 
-1. [Prerequisites](#Prerequisites) 
-2. [Quickstart](#Quickstart) 
-3. [Usage](#Usage)
+1. [Prerequisites](#prerequisites) 
+2. [Quickstart](#quickstart) 
+3. [Usage](#usage)
 
 ## PREREQUISITES
 
@@ -27,8 +27,9 @@ git clone git@github.com:CloudStar2077/Minecraft-Gaming-Server.git
 cd Minecraft-Gaming-Server
 mv example.env .env  # rename the example.env to .env
  ```
-> [!IMPORTANT]  
-> Keep in mind not to commit your .env file.
+:::caution
+Keep in mind not to commit your .env file.
+:::
 
 - Build docker image
 ```bash

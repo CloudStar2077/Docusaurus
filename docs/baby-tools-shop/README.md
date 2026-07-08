@@ -8,9 +8,9 @@ Setup a docker container to run a Django Web App, this will be implementet by ge
 
 # Table of Contents
 
-1. [Prerequisites](#Prerequisites) 
-2. [Quickstart](#Quickstart) 
-3. [Usage](#Usage)
+1. [Prerequisites](#prerequisites) 
+2. [Quickstart](#quickstart) 
+3. [Usage](#usage)
 
 ## PREREQUISITES
 
@@ -128,7 +128,7 @@ python manage.py createsuperuser
  ```
 Create a admin user & password then login to the website `<hostip>:<hostport>/admin` to add your products.
 
-<img width="1721" height="581" alt="1" src="https://github.com/user-attachments/assets/86354315-0de9-4fae-9d8a-bf7f91d74521" />
+![Baby Tools Shop](https://github.com/user-attachments/assets/86354315-0de9-4fae-9d8a-bf7f91d74521)
 
 
 

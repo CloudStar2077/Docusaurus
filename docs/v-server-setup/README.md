@@ -75,7 +75,7 @@ After installation, check the service status :
 ```bash
 systemctl status nginx.service
   ```
-<img width="1256" height="431" alt="2026-02-19_22-39" src="https://github.com/user-attachments/assets/4d275c6b-0a2d-4a29-a0e1-5804b825eab0" />
+![Nginx Status](https://github.com/user-attachments/assets/4d275c6b-0a2d-4a29-a0e1-5804b825eab0)
 
 If the preset shows enabled, this indicates that the service will automatically start after a reboot.
 
@@ -96,13 +96,13 @@ Configure the web server to load the newly defined alternative website, add the 
 ```bash
 sudo vim /etc/nginx/sites-enabled/alternatives
  ```
-<img width="611" height="293" alt="2026-02-26_14-30" src="https://github.com/user-attachments/assets/16ea08b1-427d-4e0b-aad7-96d7ea08d5a7" /> <br />
+![Nginx Config](https://github.com/user-attachments/assets/16ea08b1-427d-4e0b-aad7-96d7ea08d5a7)
 
 Write the following HTML Code to the alternate-index.html file. 
 ```bash
 sudo vim /var/www/alternatives/alternate-index.html
   ```
-<img width="976" height="378" alt="2026-02-26_14-31" src="https://github.com/user-attachments/assets/ce166273-f045-4780-af09-dd6f7b5c2875" /> <br />
+![HTML File](https://github.com/user-attachments/assets/ce166273-f045-4780-af09-dd6f7b5c2875)
 
 
 To ensure that the default nginx website is no longer displayed and users are directed to the alternative website, disable port 80 and set up a redirect to port 8081.
@@ -137,7 +137,7 @@ sudo systemctl restart nginx
   ```
 To verify, open a web browser and access the target IP address
 
-<img width="583" height="142" alt="2026-02-27_21-21" src="https://github.com/user-attachments/assets/1d005e9f-dda5-4b90-9edd-d60f6d533032" /> <br />
+![Browser Test](https://github.com/user-attachments/assets/1d005e9f-dda5-4b90-9edd-d60f6d533032)
 
 ## 5. Git Installation and Login
 
@@ -161,7 +161,7 @@ git --version
  ```
 The output should display the Git version.
 
-<img width="456" height="58" alt="2026-02-23_18-59" src="https://github.com/user-attachments/assets/202b1177-7987-4179-b58b-308cbded5e1b" /> <br />
+![Git Version](https://github.com/user-attachments/assets/202b1177-7987-4179-b58b-308cbded5e1b)
 
 Enter the credentials using the following commands:
 
@@ -188,7 +188,7 @@ Test if it works
 ```bash
 ssh -T git@github.com
  ```
-<img width="1261" height="77" alt="2026-02-25_17-37" src="https://github.com/user-attachments/assets/85c08a35-1976-4b15-a270-9c90b22e123d" /> <br />
+![SSH Test](https://github.com/user-attachments/assets/85c08a35-1976-4b15-a270-9c90b22e123d)
 
 Push the local repo to the github remote host 
 

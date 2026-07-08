@@ -8,9 +8,9 @@ This guide explains how to set up and run a legacy full-stack application consis
 
 # Table of Contents
 
-1. [Prerequisites](#Prerequisites) 
-2. [Quickstart](#Quickstart) 
-3. [Usage](#Usage)
+1. [Prerequisites](#prerequisites) 
+2. [Quickstart](#quickstart) 
+3. [Usage](#usage)
 
 ## PREREQUISITES
 
@@ -78,8 +78,9 @@ For Example ...
 | PORT                   | `8282`                                     | Public port exposed by the Docker container for the Angular frontend (accessible from the internet) |
 | API_BASE_URL           | `http://YOUR_IP:8282/api`           | Public base URL for API requests |
 
-> [!IMPORTANT]  
-> Keep in mind not to commit your `.env` file
+:::caution
+Keep in mind not to commit your `.env` file
+:::
 
 ```bash
 cd ../../../../../ # go back to project root

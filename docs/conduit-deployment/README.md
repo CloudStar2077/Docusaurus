@@ -8,9 +8,9 @@ This guide explains how to Setup a CI/CD pipeline with GitHub Actions and GitHub
 
 # Table of Contents
 
-1. [Prerequisites](#Prerequisites) 
-2. [Quickstart](#Quickstart) 
-3. [Usage](#Usage)
+1. [Prerequisites](#prerequisites) 
+2. [Quickstart](#quickstart) 
+3. [Usage](#usage)
 
 ## Prerequisites
 
@@ -90,7 +90,7 @@ Github Settings --> Developer Settings --> Personal access tokens
 Github Repository Settings --> Deploy Keys
 Github Repository Settings --> Secrets --> Actions --> New repository secret
 ```
-<img width="1137" height="915" alt="2026-04-13_19-42" src="https://github.com/user-attachments/assets/4190ec6a-f715-4112-a75b-ecebe5717628" />
+![Conduit Deployment](https://github.com/user-attachments/assets/4190ec6a-f715-4112-a75b-ecebe5717628)
 
 Additionally the repository's workflow permissions were set to Read and Write so that the Github_Token can be used for authentication with the GitHub Container Registry. 
 ```bash

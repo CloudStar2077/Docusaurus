@@ -8,9 +8,9 @@ Setup a multi-container `compose.yml`, this includes the application and the dat
 
 # Table of Contents
 
-1. [Prerequisites](#Prerequisites) 
-2. [Quickstart](#Quickstart) 
-3. [Usage](#Usage)
+1. [Prerequisites](#prerequisites) 
+2. [Quickstart](#quickstart) 
+3. [Usage](#usage)
 
 ## PREREQUISITES
 
