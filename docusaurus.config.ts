@@ -90,7 +90,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/CloudStar2077/Juice-Shop-Master',
+              href: 'https://github.com/CloudStar2077',
             },
           ],
         },
