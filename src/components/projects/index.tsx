@@ -38,7 +38,7 @@ const projects: Project[] = [
   },
   {
     title: 'Juice Shop Master',
-    description: 'OWASP Juice Shop vulnerability writeups covering SQL injection, password hash exposure, XSS payloads, and more.',
+    description: 'OWASP Juice Shop vulnerability writeups covering SQL injection, password hash exposure, and more coming soon.',
     tags: ['Security', 'OWASP', 'Writeups'],
     docLink: '/Docusaurus/docs/juice-shop-master',
     githubLink: 'https://github.com/CloudStar2077/Juice-Shop-Master',
