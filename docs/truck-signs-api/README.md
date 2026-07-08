@@ -2,11 +2,6 @@
 sidebar_position: 6
 ---
 
-bashcat > ~/Docusaurus/docs/truck-signs-api/README.md << 'ENDOFFILE'
----
-sidebar_position: 6
----
-
 # Truck Signs API 
 
 This project provides a Dockerized Django REST API for managing truck sign products, categories, and orders with PostgreSQL as the database backend.
