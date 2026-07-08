@@ -4,7 +4,7 @@ sidebar_position: 6
 
 <div align="center">
 
-![Truck Signs](./screenshots/Truck_Signs_logo.png)
+![Truck Signs](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Truck_Signs_logo.png)
 
 # Signs for Trucks
 
