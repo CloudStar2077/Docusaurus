@@ -75,7 +75,7 @@ The behavior of some of the views had to be modified to address functionalities 
         ```
     1. The SECRET_KEY is the django secret key. To generate a new one see: [Stackoverflow Link](https://stackoverflow.com/questions/41298963/is-there-a-function-for-generating-settings-secret-key-in-django)
 
-    1. **NOTE: not required for exercise**<br/>The STRIPE_PUBLISHABLE_KEY and the STRIPE_SECRET_KEY can be obtained from a developer account in [Stripe](https://stripe.com/). 
+    1. **NOTE: not required for exercise**<br />The STRIPE_PUBLISHABLE_KEY and the STRIPE_SECRET_KEY can be obtained from a developer account in [Stripe](https://stripe.com/). 
         - To retrieve the keys from a Stripe developer account follow the next instructions:
             1. Log in into your Stripe developer account (stripe.com) or create a new one (stripe.com > Sign Up). This should redirect to the account's Dashboard.
             1. Go to Developer > API Keys, and copy both the Publishable Key and the Secret Key.
@@ -106,22 +106,22 @@ __NOTE:__ To create Truck vinyls with Truck logos in them, first create the __Ca
 
 <div align="center">
 
-![alt text](./screenshots/Admin_Panel_View_Mobile.png)  ![alt text](./screenshots/Admin_Panel_View_Mobile_2.png) ![alt text](./screenshots/Admin_Panel_View_Mobile_3.png)
+![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View_Mobile.png)  ![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View_Mobile_2.png) ![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View_Mobile_3.png)
 
 </div>
 ---
 
 ### Desktop View
 
-![alt text](./screenshots/Admin_Panel_View.png)
+![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View.png)
 
 ---
 
-![alt text](./screenshots/Admin_Panel_View_2.png)
+![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View_2.png)
 
 ---
 
-![alt text](./screenshots/Admin_Panel_View_3.png)
+![alt text](https://raw.githubusercontent.com/CloudStar2077/truck_signs_api/main/screenshots/Admin_Panel_View_3.png)
 
 
 
