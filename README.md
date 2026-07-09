@@ -117,14 +117,13 @@ The site will be available at:
 
 To build the site locally:
 ```bash
-npm run build
+npm install dotenv && npm run build  
 ```
 
 To serve the built site locally:
 ```bash
 npm run serve
 ```
-
 
 
 
