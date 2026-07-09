@@ -2,18 +2,25 @@
 
 A personal portfolio website built with Docusaurus, hosted on GitHub Pages. It showcases projects and writeups in the areas of cybersecurity, software development, and IT operations.
 
-# Table of Contents
+## Table of Contents
 
 1. [Quickstart](#Quickstart) 
 2. [Usage](#Usage)
 
 ## Quickstart
 
-Prerequisites
+### Prerequisites
 
 - Node.js v24.16.0 or higher
 - npm 11.17.0 or higher
 - Git
+
+### How to Start
+
+- Install Node.js and npm 
+```bash
+sudo apt update && sudo apt install -y nodejs npm
+```
 
 - Clone Repository 
 ```bash
@@ -21,15 +28,9 @@ git clone git@github.com:CloudStar2077/Docusaurus.git &&
 cd Docusaurus
 ``` 
 
-- Install Node.js and npm 
+- Copy the example and fill in your values:
 ```bash
-sudo apt update && sudo apt install -y nodejs npm
-```
-
-- Create a new Docusaurus project:
-```bash
-npx create-docusaurus@latest my-portfolio classic --typescript
-cd my-portfolio
+cp example.env .env 
 ```
 
 - Install dependencies:
@@ -37,13 +38,44 @@ cd my-portfolio
 npm install
 ```
 
-- Start the local development server:
+- Create a new repository on GitHub and push the project:
 ```bash
-npm run start
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin git@github.com:YOUR_USERNAME/YOUR_REPO.git
+git push -u origin main
 ```
 
-The site is now available at `http://localhost:3000`.
+- GitHub Pages Setup
+```bash
+1. Go to your repository on GitHub
+2. Navigate to **Settings → Pages**
+3. Under **Source** select **GitHub Actions**
+```
 
+- GitHub Actions Secrets
+
+Go to `**Settings → Secrets → Actions → New repository secret**` and add the following secrets:
+
+| Secret | Value |
+|---|---|
+| `DOCUSAURUS_GITHUB_USERNAME` | Your GitHub username |
+| `DOCUSAURUS_CONTACT_EMAIL` | Your contact email |
+| `DOCUSAURUS_LINKEDIN_URL` | Your LinkedIn URL |
+| `DOCUSAURUS_SITE_TITLE` | Your name |
+| `DOCUSAURUS_SITE_TAGLINE` | Your job title |
+| `DOCUSAURUS_GITHUB_URL` | Your GitHub profile URL |
+| `DOCUSAURUS_URL` | Your GitHub Pages URL |
+| `DOCUSAURUS_BASE_URL` | `/YOUR_REPO_NAME/` |
+
+The site is automatically deployed on every push to the `main` branch via GitHub Actions.
+
+```bash 
+git add .
+git commit -m "modify .env"
+git push -u origin main 
+```
 ## Usage
 
 The portfolio is built with Docusaurus, a modern static site generator based on React and TypeScript. The `docusaurus.config.ts` is the central configuration file and controls the site title, base URL, navbar, footer, and custom fields. Environment variables are loaded at build time via `dotenv` and passed to React components through Docusaurus `customFields`, since process.env is not available in the browser. The `sidebars.ts` defines the structure of the documentation sidebar and is set to auto-generate from the `docs/` folder structure. Each project documentation is stored in its own subfolder under `docs/` and contains a `README.md` as the entry point and a `_category_.json` for the sidebar label and position. The portfolio homepage is defined in `src/pages/index.tsx` and assembles all React components — Header, Hero, Skills, Projects, Contact, and Footer into a single page layout. Each component lives in its own folder under `src/components/` with an `index.tsx` and a CSS Module file for styling. Sensitive configuration such as contact email, LinkedIn URL, and GitHub username is stored in the `.env` file and never committed to the repository. The .gitignore ensures that the .env file and automatically generated content like build/ and node_modules/ are excluded from version control. The CI/CD pipeline is defined in 
