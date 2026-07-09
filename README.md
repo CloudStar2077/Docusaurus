@@ -76,6 +76,7 @@ git add .
 git commit -m "modify .env"
 git push -u origin main 
 ```
+
 ## Usage
 
 The portfolio is built with Docusaurus, a modern static site generator based on React and TypeScript. The `docusaurus.config.ts` is the central configuration file and controls the site title, base URL, navbar, footer, and custom fields. Environment variables are loaded at build time via `dotenv` and passed to React components through Docusaurus `customFields`, since process.env is not available in the browser. The `sidebars.ts` defines the structure of the documentation sidebar and is set to auto-generate from the `docs/` folder structure. Each project documentation is stored in its own subfolder under `docs/` and contains a `README.md` as the entry point and a `_category_.json` for the sidebar label and position. The portfolio homepage is defined in `src/pages/index.tsx` and assembles all React components — Header, Hero, Skills, Projects, Contact, and Footer into a single page layout. Each component lives in its own folder under `src/components/` with an `index.tsx` and a CSS Module file for styling. Sensitive configuration such as contact email, LinkedIn URL, and GitHub username is stored in the `.env` file and never committed to the repository. The .gitignore ensures that the .env file and automatically generated content like build/ and node_modules/ are excluded from version control. The CI/CD pipeline is defined in 
