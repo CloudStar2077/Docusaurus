@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+.hero {
+  background: #266ad9;
+  color: #fff;
+  padding: 0;
+  min-height: 635px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.content {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 635px;
+  margin: 0 auto;
+  padding: 60px 120px 72px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.text {
+  flex: 1;
+  max-width: 664px;
+}
+
+.greeting {
+  margin: 0 0 0.5rem;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.name {
+  margin: 0 0 0.5rem;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.title {
+  margin: 0 0 1.5rem;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.bio {
+  max-width: 664px;
+  margin: 0 0 2rem;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 28px;
+
+  background: #fff;
+  border-radius: 30px;
+
+  color: #266ad9;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  text-decoration: none;
+
+  transition: opacity 0.2s;
+}
+
+.cta:hover {
+  color: #266ad9;
+  opacity: 0.9;
+}
+
+.desktopPhoto {
+  display: block;
+  flex-shrink: 0;
+}
+
+.mobilePhoto {
+  display: none;
+}
+
+.photoPlaceholder {
+  width: 280px;
+  height: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.9rem;
+}
+
+/* Tablet und Mobile */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .content {
+    display: block;
+    padding: 40px 24px 56px;
+  }
+
+  .text {
+  width: 100%;
+  max-width: 664px;
+  flex: 0 1 664px;
+}
+
+  .desktopPhoto {
+  display: block;
+  flex: 0 0 auto;
+}
+
+  .mobilePhoto {
+    display: block;
+    width: 100%;
+    margin: 24px 0;
+  }
+
+  .photoPlaceholder {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1.05;
+    border-radius: 30px;
+  }
+
+  .greeting {
+    font-size: 20px;
+  }
+
+  .name {
+    font-size: 48px;
+  }
+
+  .title {
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+
+  .bio {
+    max-width: none;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .cta {
+    padding: 10px 22px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .content {
+    padding: 24px 26px 40px;
+  }
+
+  .greeting {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .mobilePhoto {
+    margin: 24px 0;
+  }
+
+  .photoPlaceholder {
+    width: 100%;
+    aspect-ratio: 1 / 1.05;
+  }
+
+  .bio {
+    font-size: 16px;
+    line-height: 120%;
+  }
+}

@@ -1,10 +1,12 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Any CSS included here will be global.
+ * Docusaurus / Infima overrides
  */
 
-/* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* ---------- Infima ---------- */
+
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -13,11 +15,11 @@
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -26,5 +28,87 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Global sizing ---------- */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+#__docusaurus {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+/* ---------- Markdown ---------- */
+
+article {
+  max-width: 100% !important;
+}
+
+.markdown img {
+  width: 100%;
+  max-width: 100%;
+  cursor: zoom-in;
+}
+
+/* ---------- Docusaurus layout ---------- */
+
+/* Standard Navbar ausblenden */
+.navbar {
+  display: none !important;
+}
+
+/* Standard Docusaurus Footer ausblenden */
+.theme-layout-footer {
+  display: none !important;
+}
+
+/* Fallback für ältere oder anders gerenderte Theme-Footer */
+footer.footer {
+  display: none !important;
+}
+
+/* ---------- Mobile overflow protection ---------- */
+
+@media (max-width: 768px) {
+  main,
+  section,
+  header,
+  footer,
+  nav,
+  article,
+  div {
+    min-width: 0;
+  }
+
+  pre,
+  code {
+    max-width: 100%;
+  }
 }
