@@ -55,39 +55,49 @@
 
 .listItem,
 .activeItem {
-  color: #fff;
   font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 120%;
 }
 
 .projectButton {
-  margin: 0;
   padding: 0;
 
   background: transparent;
   border: 0;
 
-  color: inherit;
+  color: #fff;
   font: inherit;
-  line-height: inherit;
   text-align: left;
-  text-decoration: none;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-
   cursor: pointer;
+
+  text-decoration: none;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+
+  transition:
+    color .2s ease,
+    text-decoration-color .2s ease;
 }
 
-.projectButton:hover {
+/* Hover = Weiß + Unterstrich */
+
+.listItem .projectButton:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-.activeItem {
-  color: #fff;
-  font-weight: 400;
+/* Aktives Projekt */
+
+.activeItem .projectButton {
+  color: #1E2A3A;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.activeItem .projectButton:hover {
+  color: #1E2A3A;
 }
 
 .activeItem .projectButton {

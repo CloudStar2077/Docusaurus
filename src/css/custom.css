@@ -34,15 +34,18 @@
 
 /* ---------- Global sizing ---------- */
 
-html,
+html {
+  width: 100%;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   max-width: 100%;
   margin: 0;
   overflow-x: hidden;
-}
 
-body {
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -63,6 +66,13 @@ svg,
 video,
 canvas {
   max-width: 100%;
+  display: block;
+}
+
+/* ---------- Offset für Sticky Header ---------- */
+
+section[id] {
+  scroll-margin-top: 140px;
 }
 
 /* ---------- Markdown ---------- */
@@ -84,12 +94,12 @@ article {
   display: none !important;
 }
 
-/* Standard Docusaurus Footer ausblenden */
+/* Standard Footer ausblenden */
 .theme-layout-footer {
   display: none !important;
 }
 
-/* Fallback für ältere oder anders gerenderte Theme-Footer */
+/* Fallback für ältere Themes */
 footer.footer {
   display: none !important;
 }
@@ -110,5 +120,6 @@ footer.footer {
   pre,
   code {
     max-width: 100%;
+    overflow-x: auto;
   }
 }

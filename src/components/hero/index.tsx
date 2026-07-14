@@ -12,9 +12,11 @@ export default function Hero() {
           <p className={styles.title}>DevSecOps Engineer</p>
 
           <div className={styles.mobilePhoto}>
-            <div className={styles.photoPlaceholder}>
-              <span>Photo</span>
-            </div>
+            <img
+              src="/Docusaurus/img/me.png"
+              alt="Portrait of Vladimir Ivić"
+              className={styles.photo}
+            />
           </div>
 
           <p className={styles.bio}>
@@ -34,9 +36,11 @@ export default function Hero() {
         </div>
 
         <div className={styles.desktopPhoto}>
-          <div className={styles.photoPlaceholder}>
-            <span>Photo</span>
-          </div>
+          <img
+            src="/Docusaurus/img/me.png"
+            alt="Portrait of Vladimir Ivić"
+            className={styles.photo}
+          />
         </div>
       </div>
     </section>
