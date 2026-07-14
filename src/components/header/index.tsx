@@ -1,4 +1,4 @@
-import {useEffect, useRef, useState} from 'react';
+import {Fragment, useEffect, useRef, useState} from 'react';
 import styles from './header.module.css';
 
 export default function Header() {
@@ -16,32 +16,23 @@ export default function Header() {
     lastScrollY.current = window.scrollY;
 
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY = Math.max(window.scrollY, 0);
       const previousScrollY = lastScrollY.current;
 
-      /* Oben und bei geöffnetem Menü immer sichtbar */
-      if (currentScrollY <= 20 || menuOpenRef.current) {
+      if (menuOpenRef.current || currentScrollY <= 20) {
         setHidden(false);
-        lastScrollY.current = currentScrollY;
-        return;
-      }
-
-      /* Nach unten scrollen */
-      if (currentScrollY > previousScrollY) {
+      } else if (currentScrollY > previousScrollY) {
+        // Nach unten: Header ausblenden
         setHidden(true);
-      }
-
-      /* Sobald nach oben gescrollt wird */
-      if (currentScrollY < previousScrollY) {
+      } else if (currentScrollY < previousScrollY) {
+        // Nach oben: Header sofort wieder anzeigen
         setHidden(false);
       }
 
       lastScrollY.current = currentScrollY;
     };
 
-    window.addEventListener('scroll', handleScroll, {
-      passive: true,
-    });
+    window.addEventListener('scroll', handleScroll, {passive: true});
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -58,55 +49,60 @@ export default function Header() {
   };
 
   return (
-    <header
-      className={`${styles.header} ${
-        hidden ? styles.hidden : ''
-      }`}
-    >
-      <div className={styles.inner}>
-        <nav
-          id="main-navigation"
-          className={`${styles.nav} ${
-            menuOpen ? styles.navOpen : ''
-          }`}
-          aria-label="Main navigation"
-        >
-          <a href="#about" onClick={closeMenu}>
-            About me
-          </a>
+    <Fragment>
+      <header
+        className={styles.header}
+        style={{
+          transform: hidden ? 'translateY(-100%)' : 'translateY(0)',
+        }}
+      >
+        <div className={styles.inner}>
+          <nav
+            id="main-navigation"
+            className={`${styles.nav} ${
+              menuOpen ? styles.navOpen : ''
+            }`}
+            aria-label="Main navigation"
+          >
+            <a href="#about" onClick={closeMenu}>
+              About me
+            </a>
 
-          <a href="#skills" onClick={closeMenu}>
-            My skills
-          </a>
+            <a href="#skills" onClick={closeMenu}>
+              My skills
+            </a>
 
-          <a href="#projects" onClick={closeMenu}>
-            My projects
-          </a>
+            <a href="#projects" onClick={closeMenu}>
+              My projects
+            </a>
 
-          <a href="#contact" onClick={closeMenu}>
-            Contact
-          </a>
-        </nav>
+            <a href="#contact" onClick={closeMenu}>
+              Contact
+            </a>
+          </nav>
 
-        <button
-          type="button"
-          className={`${styles.menuButton} ${
-            menuOpen ? styles.menuButtonOpen : ''
-          }`}
-          onClick={toggleMenu}
-          aria-label={
-            menuOpen
-              ? 'Close navigation menu'
-              : 'Open navigation menu'
-          }
-          aria-expanded={menuOpen}
-          aria-controls="main-navigation"
-        >
-          <span />
-          <span />
-          <span />
-        </button>
-      </div>
-    </header>
+          <button
+            type="button"
+            className={`${styles.menuButton} ${
+              menuOpen ? styles.menuButtonOpen : ''
+            }`}
+            onClick={toggleMenu}
+            aria-label={
+              menuOpen
+                ? 'Close navigation menu'
+                : 'Open navigation menu'
+            }
+            aria-expanded={menuOpen}
+            aria-controls="main-navigation"
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
+      </header>
+
+      <div className={styles.headerSpacer} aria-hidden="true" />
+    </Fragment>
   );
 }

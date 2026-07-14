@@ -61,6 +61,17 @@
   line-height: 120%;
 }
 
+/* Die Farbe am li steuert auch die Zahl des ol-Markers. */
+
+.listItem {
+  color: #fff;
+}
+
+.activeItem {
+  color: #1e2a3a;
+  font-weight: 600;
+}
+
 .projectButton {
   margin: 0;
   padding: 0;
@@ -68,7 +79,7 @@
   background: transparent;
   border: 0;
 
-  color: #fff;
+  color: inherit;
   font: inherit;
   line-height: inherit;
   text-align: left;
@@ -83,7 +94,7 @@
 }
 
 .listItem .projectButton {
-  color: #fff;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -93,13 +104,13 @@
 }
 
 .activeItem .projectButton {
-  color: #1e2a3a;
+  color: inherit;
   font-weight: 600;
   text-decoration: none;
 }
 
 .activeItem .projectButton:hover {
-  color: #1e2a3a;
+  color: inherit;
   text-decoration: none;
 }
 
