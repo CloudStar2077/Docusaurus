@@ -6,40 +6,37 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const lastScrollY = useRef(0);
-  const ticking = useRef(false);
+  const menuOpenRef = useRef(false);
+
+  useEffect(() => {
+    menuOpenRef.current = menuOpen;
+  }, [menuOpen]);
 
   useEffect(() => {
     lastScrollY.current = window.scrollY;
 
-    const updateHeader = () => {
+    const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      const scrollDifference = currentScrollY - lastScrollY.current;
+      const previousScrollY = lastScrollY.current;
 
-      // Ganz oben oder bei geöffnetem Mobilmenü:
-      // Header immer anzeigen.
-      if (currentScrollY <= 20 || menuOpen) {
+      /* Oben und bei geöffnetem Menü immer sichtbar */
+      if (currentScrollY <= 20 || menuOpenRef.current) {
         setHidden(false);
-      } else if (scrollDifference > 4) {
-        // Nach unten scrollen:
-        // Header ausblenden.
+        lastScrollY.current = currentScrollY;
+        return;
+      }
+
+      /* Nach unten scrollen */
+      if (currentScrollY > previousScrollY) {
         setHidden(true);
-      } else if (scrollDifference < -4) {
-        // Nach oben scrollen:
-        // Header wieder anzeigen.
+      }
+
+      /* Sobald nach oben gescrollt wird */
+      if (currentScrollY < previousScrollY) {
         setHidden(false);
       }
 
       lastScrollY.current = currentScrollY;
-      ticking.current = false;
-    };
-
-    const handleScroll = () => {
-      if (ticking.current) {
-        return;
-      }
-
-      window.requestAnimationFrame(updateHeader);
-      ticking.current = true;
     };
 
     window.addEventListener('scroll', handleScroll, {
@@ -49,7 +46,7 @@ export default function Header() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [menuOpen]);
+  }, []);
 
   const closeMenu = () => {
     setMenuOpen(false);
