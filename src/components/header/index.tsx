@@ -6,39 +6,45 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const lastScrollY = useRef(0);
+  const ticking = useRef(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    lastScrollY.current = window.scrollY;
+
+    const updateHeader = () => {
       const currentScrollY = window.scrollY;
+      const scrollDifference = currentScrollY - lastScrollY.current;
 
-      // Header oben immer anzeigen
-      if (currentScrollY <= 20) {
+      // Ganz oben oder bei geöffnetem Mobilmenü:
+      // Header immer anzeigen.
+      if (currentScrollY <= 20 || menuOpen) {
         setHidden(false);
-        lastScrollY.current = currentScrollY;
-        return;
-      }
-
-      // Mobile-Menü geöffnet -> Header sichtbar lassen
-      if (menuOpen) {
-        setHidden(false);
-        lastScrollY.current = currentScrollY;
-        return;
-      }
-
-      // Nach unten scrollen -> verstecken
-      if (currentScrollY > lastScrollY.current) {
+      } else if (scrollDifference > 4) {
+        // Nach unten scrollen:
+        // Header ausblenden.
         setHidden(true);
-      }
-
-      // Nach oben scrollen -> wieder anzeigen
-      if (currentScrollY < lastScrollY.current) {
+      } else if (scrollDifference < -4) {
+        // Nach oben scrollen:
+        // Header wieder anzeigen.
         setHidden(false);
       }
 
       lastScrollY.current = currentScrollY;
+      ticking.current = false;
     };
 
-    window.addEventListener('scroll', handleScroll, {passive: true});
+    const handleScroll = () => {
+      if (ticking.current) {
+        return;
+      }
+
+      window.requestAnimationFrame(updateHeader);
+      ticking.current = true;
+    };
+
+    window.addEventListener('scroll', handleScroll, {
+      passive: true,
+    });
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -50,16 +56,22 @@ export default function Header() {
   };
 
   const toggleMenu = () => {
-    setMenuOpen((open) => !open);
+    setMenuOpen((current) => !current);
     setHidden(false);
   };
 
   return (
-    <header className={`${styles.header} ${hidden ? styles.hidden : ''}`}>
+    <header
+      className={`${styles.header} ${
+        hidden ? styles.hidden : ''
+      }`}
+    >
       <div className={styles.inner}>
         <nav
           id="main-navigation"
-          className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}
+          className={`${styles.nav} ${
+            menuOpen ? styles.navOpen : ''
+          }`}
           aria-label="Main navigation"
         >
           <a href="#about" onClick={closeMenu}>

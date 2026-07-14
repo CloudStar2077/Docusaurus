@@ -8,8 +8,13 @@ export default function Contact() {
           <h2 className={styles.heading}>Contact me</h2>
 
           <ul className={styles.list}>
-            <li>Feel free to reach out with job offers or opportunities like...</li>
-            <li>DevSecOps Engineer, Cloud Engineer, System Engineer</li>
+            <li>
+              Feel free to reach out with job offers or opportunities
+              like...
+            </li>
+            <li>
+              DevSecOps Engineer, Cloud Engineer, System Engineer
+            </li>
             <li>I am open for remote work</li>
           </ul>
         </div>
@@ -24,8 +29,14 @@ export default function Contact() {
               href="mailto:vladimir.ivic@gmx.de"
               className={styles.link}
             >
-              <span className={styles.linkIcon}>✉️</span>
-              vladimir.ivic@gmx.de
+              <span
+                className={`${styles.iconCell} ${styles.mailIcon}`}
+                aria-hidden="true"
+              >
+                ✉️
+              </span>
+
+              <span>vladimir.ivic@gmx.de</span>
             </a>
 
             <a
@@ -34,12 +45,16 @@ export default function Contact() {
               rel="noreferrer"
               className={styles.link}
             >
-              <img
-                src="/Docusaurus/img/linkedin.svg"
-                alt="LinkedIn"
-                style={{width: '1.2rem', height: '1.2rem'}}
-              />
-              Profile Page
+              <span className={styles.iconCell}>
+                <img
+                  src="/Docusaurus/img/linkedin.svg"
+                  alt=""
+                  aria-hidden="true"
+                  className={styles.linkedinIcon}
+                />
+              </span>
+
+              <span>Profile Page</span>
             </a>
           </div>
         </div>

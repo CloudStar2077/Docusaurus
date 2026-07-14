@@ -56,12 +56,13 @@
 .listItem,
 .activeItem {
   font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 120%;
 }
 
 .projectButton {
+  margin: 0;
   padding: 0;
 
   background: transparent;
@@ -69,39 +70,45 @@
 
   color: #fff;
   font: inherit;
+  line-height: inherit;
   text-align: left;
-  cursor: pointer;
 
   text-decoration: none;
+  text-decoration-thickness: 1px;
   text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
+
+  cursor: pointer;
 
   transition:
-    color .2s ease,
-    text-decoration-color .2s ease;
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
 }
 
-/* Hover = Weiß + Unterstrich */
+/* Normal: weiß */
+
+.listItem .projectButton {
+  color: #fff;
+}
+
+/* Hover: weiß + Unterstrich */
 
 .listItem .projectButton:hover {
   color: #fff;
   text-decoration: underline;
 }
 
-/* Aktives Projekt */
+/* Aktiv: dunkel + Unterstrich */
 
 .activeItem .projectButton {
-  color: #1E2A3A;
+  color: #1e2a3a;
   font-weight: 600;
   text-decoration: underline;
 }
 
-.activeItem .projectButton:hover {
-  color: #1E2A3A;
-}
+/* Aktiv bleibt beim Hover dunkel */
 
-.activeItem .projectButton {
-  color: #fff;
+.activeItem .projectButton:hover {
+  color: #1e2a3a;
   text-decoration: underline;
 }
 
@@ -384,7 +391,7 @@
 }
 
 /* ==================================================
-   Mobile – bestehende Darstellung
+   Mobile
    ================================================== */
 
 .mobileProjects {

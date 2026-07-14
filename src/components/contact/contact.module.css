@@ -99,15 +99,16 @@
   opacity: 0.75;
 }
 
-.linkIcon {
+.iconCell {
   width: 40px;
   height: 40px;
-  flex-shrink: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+.mailIcon {
   background: #2563eb;
   border-radius: 50%;
 
@@ -115,12 +116,15 @@
   line-height: 1;
 }
 
-.linkIcon img,
-.linkIcon svg {
-  width: 22px;
-  height: 22px;
+.linkedinIcon {
+  width: 24px;
+  height: 24px;
+
   display: block;
   object-fit: contain;
+
+  /* Korrigiert den internen Leerraum des SVGs optisch. */
+  transform: translateX(3px);
 }
 
 /* ---------- Tablet ---------- */
@@ -194,15 +198,18 @@
     font-size: 13px;
   }
 
-  .linkIcon {
+  .iconCell {
     width: 32px;
     height: 32px;
+  }
+
+  .mailIcon {
     font-size: 18px;
   }
 
-  .linkIcon img,
-  .linkIcon svg {
-    width: 18px;
-    height: 18px;
+  .linkedinIcon {
+    width: 20px;
+    height: 20px;
+    transform: translateX(2px);
   }
 }
