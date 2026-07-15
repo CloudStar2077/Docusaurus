@@ -25,10 +25,18 @@ const config: Config = {
     v4: true,
   },
 
-  url: process.env.DOCUSAURUS_URL || 'https://cloudstar2077.github.io',
-  baseUrl: process.env.DOCUSAURUS_BASE_URL || '/Docusaurus/',
+  url:
+    process.env.DOCUSAURUS_URL ||
+    'https://cloudstar2077.github.io',
 
-  organizationName: process.env.DOCUSAURUS_GITHUB_USERNAME || 'CloudStar2077',
+  baseUrl:
+    process.env.DOCUSAURUS_BASE_URL ||
+    '/Docusaurus/',
+
+  organizationName:
+    process.env.DOCUSAURUS_GITHUB_USERNAME ||
+    'CloudStar2077',
+
   projectName: 'Docusaurus',
 
   onBrokenLinks: 'throw',
@@ -47,16 +55,10 @@ const config: Config = {
           breadcrumbs: false,
           remarkPlugins: [remarkGithubAlerts],
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+
+        // Blog vollständig deaktiviert
+        blog: false,
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -66,16 +68,20 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
+
     colorMode: {
       respectPrefersColorScheme: true,
     },
+
     navbar: {
       title: '',
+
       logo: {
         alt: 'Home',
         src: 'img/docusaurus.png',
         href: '/Docusaurus/',
       },
+
       items: [
         {
           type: 'docSidebar',
@@ -83,14 +89,16 @@ const config: Config = {
           position: 'left',
           label: 'Projects',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: process.env.DOCUSAURUS_GITHUB_URL || 'https://github.com/CloudStar2077',
+          href:
+            process.env.DOCUSAURUS_GITHUB_URL ||
+            'https://github.com/CloudStar2077',
           label: 'GitHub',
           position: 'right',
         },
       ],
     },
+
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
