@@ -10,7 +10,7 @@ interface Skill {
 const skills: Skill[] = [
   {
     name: 'Linux',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+    icon: 'img/lpic-1-skill-icon.png',
     description: ['LPIC-1 certified', 'System administration', 'Kali Linux'],
   },
   {
