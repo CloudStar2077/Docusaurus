@@ -1,44 +1,101 @@
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import styles from './legal-notice.module.css';
 
 export default function LegalNotice() {
   return (
-    <Layout title="Legal Notice">
+    <Layout
+      title="Legal Notice"
+      description="Legal notice for the portfolio of Vladimir Ivić"
+    >
       <main
+        className={styles.page}
         style={{
-          maxWidth: '900px',
-          margin: '0 auto',
-          padding: '80px 24px',
-          color: '#fff',
+          minHeight: '100vh',
+          backgroundColor: '#1e2a3a',
+          color: '#f8f5ec',
         }}
       >
-        <h1>Legal Notice</h1>
+        <div className={styles.container}>
+          <Link to="/" className={styles.backLink}>
+            ← Back to portfolio
+          </Link>
 
-        <p>
-          Vladimir Ivić<br />
-          Franzosenkoppel 30<br />
-          22547 Hamburg<br />
-          Germany
-        </p>
+          <header className={styles.header}>
+            <p className={styles.eyebrow}>Legal information</p>
+            <h1 className={styles.title}>Legal Notice</h1>
+          </header>
 
-        <h2>Contact</h2>
+          <section className={styles.section}>
+            <p>
+              Vladimir Ivić
+              <br />
+              Franzosenkoppel 30
+              <br />
+              22547 Hamburg
+              <br />
+              Germany
+            </p>
+          </section>
 
-        <p>
-          E-Mail: vladimir.ivic@gmx.de
-        </p>
+          <section className={styles.section}>
+            <h2>Contact</h2>
 
-        <h2>Responsible for the content</h2>
+            <p>
+              Email:{' '}
+              <a href="mailto:vladimir.ivic@gmx.de">
+                vladimir.ivic@gmx.de
+              </a>
+            </p>
+          </section>
 
-        <p>
-          Vladimir Ivić
-        </p>
+          <section className={styles.section}>
+            <h2>Responsible for editorial content</h2>
 
-        <h2>Disclaimer</h2>
+            <p>
+              Vladimir Ivić
+              <br />
+              Franzosenkoppel 30
+              <br />
+              22547 Hamburg
+              <br />
+              Germany
+            </p>
+          </section>
 
-        <p>
-          The contents of this website have been created with the greatest
-          possible care. However, no guarantee can be given for the accuracy,
-          completeness or timeliness of the information provided.
-        </p>
+          <section className={styles.section}>
+            <h2>Liability for content</h2>
+
+            <p>
+              The contents of this website were created with great care.
+              However, no guarantee is given for the accuracy, completeness,
+              or currentness of the information provided.
+            </p>
+          </section>
+
+          <section className={styles.section}>
+            <h2>Liability for links</h2>
+
+            <p>
+              This website contains links to external websites. I have no
+              influence over the content of those websites and therefore
+              cannot accept responsibility for their content. The respective
+              provider or operator is responsible for the content of linked
+              pages.
+            </p>
+          </section>
+
+          <section className={styles.section}>
+            <h2>Copyright</h2>
+
+            <p>
+              The content and works created for this website are subject to
+              applicable copyright law. Reproduction, editing, distribution,
+              or use beyond the limits of copyright law requires prior written
+              permission from the respective author.
+            </p>
+          </section>
+        </div>
       </main>
     </Layout>
   );

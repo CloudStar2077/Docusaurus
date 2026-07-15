@@ -1,14 +1,15 @@
 .page {
+  width: 100%;
   min-height: 100vh;
 
-  background: #1e2a3a;
-  color: #f8f5ec;
-
-  color-scheme: dark;
+  background-color: #1e2a3a !important;
+  color: #f8f5ec !important;
 
   font-family: 'Quicksand', sans-serif;
+  color-scheme: dark;
 }
 
+.page,
 .page * {
   box-sizing: border-box;
 }
@@ -24,21 +25,20 @@
   display: inline-block;
   margin-bottom: 56px;
 
-  color: #9dbbff;
-  text-decoration: none;
-
+  color: #9dbbff !important;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 120%;
+  text-decoration: none;
 
   transition:
-    color .2s ease,
-    transform .2s ease;
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .backLink:hover {
-  color: #fff;
+  color: #fff !important;
   transform: translateX(-3px);
 }
 
@@ -49,21 +49,19 @@
 .eyebrow {
   margin: 0 0 10px;
 
-  color: #9dbbff;
-
+  color: #9dbbff !important;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 120%;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  letter-spacing: .04em;
 }
 
 .title {
   margin: 0;
 
-  color: #fff;
-
+  color: #fff !important;
   font-family: 'Quicksand', sans-serif;
   font-size: 56px;
   font-weight: 700;
@@ -72,19 +70,17 @@
 
 .section {
   padding: 32px 0;
-
-  border-top: 1px solid rgba(157,187,255,.25);
+  border-top: 1px solid rgba(157, 187, 255, 0.25);
 }
 
 .section:last-child {
-  border-bottom: 1px solid rgba(157,187,255,.25);
+  border-bottom: 1px solid rgba(157, 187, 255, 0.25);
 }
 
 .section h2 {
   margin: 0 0 16px;
 
-  color: #fff;
-
+  color: #fff !important;
   font-family: 'Quicksand', sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -96,8 +92,7 @@
 .page address {
   margin: 0;
 
-  color: #d1d5db;
-
+  color: #d1d5db !important;
   font-family: 'Quicksand', sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -105,61 +100,50 @@
 }
 
 .section strong {
-  color: #fff;
+  color: #fff !important;
 }
 
 .section a {
-  color: #9dbbff;
+  color: #9dbbff !important;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 .section a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
-/* Browser soll NICHT automatisch invertieren */
-
-@media (prefers-color-scheme: dark) {
-
-  html,
-  body,
-  .page {
-    background: #1e2a3a;
-    color: #f8f5ec;
-  }
-
-  .section h2,
-  .title,
-  strong {
-    color: #fff;
-  }
-
-  .section p,
-  .section li,
-  address {
-    color: #d1d5db;
-  }
-
-  a {
-    color: #9dbbff;
-  }
+.page address {
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: light) {
+/* Docusaurus Light- und Dark-Theme explizit überschreiben */
 
-  html,
-  body,
-  .page {
-    background: #1e2a3a;
-    color: #f8f5ec;
-  }
+:global(html[data-theme='light']) .page,
+:global(html[data-theme='dark']) .page {
+  background-color: #1e2a3a !important;
+  color: #f8f5ec !important;
+}
+
+:global(html[data-theme='light']) .page h1,
+:global(html[data-theme='light']) .page h2,
+:global(html[data-theme='light']) .page h3,
+:global(html[data-theme='dark']) .page h1,
+:global(html[data-theme='dark']) .page h2,
+:global(html[data-theme='dark']) .page h3 {
+  color: #fff !important;
+}
+
+:global(html[data-theme='light']) .page p,
+:global(html[data-theme='light']) .page li,
+:global(html[data-theme='dark']) .page p,
+:global(html[data-theme='dark']) .page li {
+  color: #d1d5db !important;
 }
 
 /* ---------- Mobile ---------- */
 
-@media (max-width:768px) {
-
+@media (max-width: 768px) {
   .container {
     padding: 48px 24px 80px;
   }
@@ -186,13 +170,12 @@
 
   .section p,
   .section li,
-  address {
+  .page address {
     font-size: 16px;
   }
 }
 
-@media (max-width:390px) {
-
+@media (max-width: 390px) {
   .container {
     padding: 32px 16px 64px;
   }
