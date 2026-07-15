@@ -56,10 +56,15 @@ const skills: Skill[] = [
     ],
   },
   {
-    name: 'Monitoring',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg',
-    description: ['Zabbix', 'Grafana', 'System monitoring', 'Alerting'],
-  },
+  name: 'Monitoring and Observability',
+  icon: '/Docusaurus/img/monitoring.svg',
+  description: [
+    'Zabbix',
+    'Grafana',
+    'System monitoring',
+    'Alerting',
+  ],
+},
   {
     name: 'Virtualization',
     icon: '/Docusaurus/img/virtualization.svg',
