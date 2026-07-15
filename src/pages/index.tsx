@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
-import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
+
 import Header from '../components/header';
 import Hero from '../components/hero';
 import Skills from '../components/skills';
@@ -9,15 +10,26 @@ import Footer from '../components/footer';
 
 export default function Home(): ReactNode {
   return (
-    <Layout
-      title="Portfolio"
-      description="DevSecOps Engineer Portfolio">
+    <>
+      <Head>
+        <title>Portfolio | Vladimir Ivić</title>
+
+        <meta
+          name="description"
+          content="DevSecOps Engineer Portfolio of Vladimir Ivić"
+        />
+      </Head>
+
       <Header />
-      <Hero />
-      <Skills />
-      <Projects />
-      <Contact />
+
+      <main>
+        <Hero />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+
       <Footer />
-    </Layout>
+    </>
   );
 }

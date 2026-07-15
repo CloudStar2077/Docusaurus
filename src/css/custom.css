@@ -8,26 +8,26 @@
 /* ---------- Infima ---------- */
 
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #266ad9;
+  --ifm-color-primary-dark: #1f5fc8;
+  --ifm-color-primary-darker: #1d59bd;
+  --ifm-color-primary-darkest: #18499b;
+  --ifm-color-primary-light: #3d79de;
+  --ifm-color-primary-lighter: #4a82e1;
+  --ifm-color-primary-lightest: #709ce8;
 
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #70a0ff;
+  --ifm-color-primary-dark: #4f89ff;
+  --ifm-color-primary-darker: #3f7eff;
+  --ifm-color-primary-darkest: #0d5cff;
+  --ifm-color-primary-light: #91b7ff;
+  --ifm-color-primary-lighter: #a1c2ff;
+  --ifm-color-primary-lightest: #d3e2ff;
 
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
@@ -69,7 +69,7 @@ canvas {
   display: block;
 }
 
-/* ---------- Offset für Sticky Header ---------- */
+/* ---------- Anchor offset ---------- */
 
 section[id] {
   scroll-margin-top: 140px;
@@ -87,19 +87,21 @@ article {
   cursor: zoom-in;
 }
 
-/* ---------- Docusaurus layout ---------- */
+/* ---------- Docusaurus Navbar ---------- */
 
-/* Standard Navbar ausblenden */
+/*
+ * Nicht ausblenden.
+ * Dadurch bleibt die normale Docusaurus-Navbar auf Docs,
+ * Projektseiten und Blogseiten sichtbar.
+ */
+
 .navbar {
-  display: none !important;
+  font-family: 'Quicksand', sans-serif;
 }
 
-/* Standard Footer ausblenden */
-.theme-layout-footer {
-  display: none !important;
-}
+/* ---------- Docusaurus Footer ausblenden ---------- */
 
-/* Fallback für ältere Themes */
+.theme-layout-footer,
 footer.footer {
   display: none !important;
 }
@@ -121,5 +123,9 @@ footer.footer {
   code {
     max-width: 100%;
     overflow-x: auto;
+  }
+
+  section[id] {
+    scroll-margin-top: 80px;
   }
 }

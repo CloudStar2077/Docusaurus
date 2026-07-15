@@ -1,21 +1,22 @@
-import Layout from '@theme/Layout';
+import type {ReactNode} from 'react';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
+
 import styles from './legal-notice.module.css';
 
-export default function LegalNotice() {
+export default function LegalNotice(): ReactNode {
   return (
-    <Layout
-      title="Legal Notice"
-      description="Legal notice for the portfolio of Vladimir Ivić"
-    >
-      <main
-        className={styles.page}
-        style={{
-          minHeight: '100vh',
-          backgroundColor: '#1e2a3a',
-          color: '#f8f5ec',
-        }}
-      >
+    <>
+      <Head>
+        <title>Legal Notice | Vladimir Ivić</title>
+
+        <meta
+          name="description"
+          content="Legal notice for the portfolio of Vladimir Ivić"
+        />
+      </Head>
+
+      <main className={styles.page}>
         <div className={styles.container}>
           <Link to="/" className={styles.backLink}>
             ← Back to portfolio
@@ -27,7 +28,7 @@ export default function LegalNotice() {
           </header>
 
           <section className={styles.section}>
-            <p>
+            <address>
               Vladimir Ivić
               <br />
               Franzosenkoppel 30
@@ -35,7 +36,7 @@ export default function LegalNotice() {
               22547 Hamburg
               <br />
               Germany
-            </p>
+            </address>
           </section>
 
           <section className={styles.section}>
@@ -52,7 +53,7 @@ export default function LegalNotice() {
           <section className={styles.section}>
             <h2>Responsible for editorial content</h2>
 
-            <p>
+            <address>
               Vladimir Ivić
               <br />
               Franzosenkoppel 30
@@ -60,7 +61,7 @@ export default function LegalNotice() {
               22547 Hamburg
               <br />
               Germany
-            </p>
+            </address>
           </section>
 
           <section className={styles.section}>
@@ -97,6 +98,6 @@ export default function LegalNotice() {
           </section>
         </div>
       </main>
-    </Layout>
+    </>
   );
 }
