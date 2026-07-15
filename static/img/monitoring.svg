@@ -1,16 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="invisible_box" data-name="invisible box">
-      <rect width="48" height="48" fill="none"/>
-    </g>
-    <g id="Health_Icons" data-name="Health Icons">
-      <g>
-        <path d="M43,4H5A2.9,2.9,0,0,0,2,7V35a2.9,2.9,0,0,0,3,3H43a2.9,2.9,0,0,0,3-3V7A2.9,2.9,0,0,0,43,4ZM42,34H6V22.9H8.6a2,2,0,0,0,1.8-1.2l.5-.9,2.9,6.1A1.9,1.9,0,0,0,15.6,28a2.1,2.1,0,0,0,1.8-1.1l4.8-10.2,2.4,5a2.2,2.2,0,0,0,1.8,1.2H30a2,2,0,0,0,0-4H27.7L24,11.1a2,2,0,0,0-3.6,0L15.6,21.3l-2.9-6.1a2.1,2.1,0,0,0-1.8-1.1,1.9,1.9,0,0,0-1.8,1.1L7.3,18.9H6V8H42Z"/>
-        <path d="M28,28H24a2,2,0,0,0,0,4h4a2,2,0,0,0,0-4Z"/>
-        <path d="M34,32h4a2,2,0,0,0,0-4H34a2,2,0,0,0,0,4Z"/>
-        <path d="M37,40H11a2,2,0,0,0,0,4H37a2,2,0,0,0,0-4Z"/>
-      </g>
-    </g>
-  </g>
-</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>.cls-1,.cls-3{fill:#4285f4;}.cls-2{fill:#669df6;}.cls-2,.cls-3,.cls-4{fill-rule:evenodd;}.cls-4{fill:#aecbfa;}</style>
+</defs>
+<title>Icon_24px_DeployManage_Color</title>
+<g data-name="Product Icons">
+<g >
+<rect class="cls-1" x="10" y="17" width="4" height="4"/>
+<polygon class="cls-2" points="19 10.84 14.66 6.51 13.65 7.52 19 12.85 19 10.84"/>
+<polygon class="cls-3" points="15.67 9.53 13.65 7.52 14.66 6.51 15.67 7.52 15.67 9.53"/>
+<polygon class="cls-4" points="10.94 12.24 9.93 11.23 14.66 6.51 15.67 7.52 10.94 12.24"/>
+<polygon class="cls-2" points="10.94 12.24 8.08 9.39 9.1 8.38 11.95 11.23 10.94 12.24"/>
+<polygon class="cls-3" points="10.08 11.38 8.08 9.39 9.1 8.38 10.08 9.36 10.08 11.38"/>
+<polygon class="cls-4" points="5.44 13.99 10.08 9.36 9.07 8.35 5 12.41 5 13.99 5.44 13.99"/>
+<path class="cls-2" d="M22,4.05a1.24,1.24,0,0,0-1-1H3a1.24,1.24,0,0,0-1,1V17a1.19,1.19,0,0,0,1,1H21a1.19,1.19,0,0,0,1-1V4.05ZM20,16H4V5H20Z"/>
+<path class="cls-2" d="M8,22c0-.69.31-1,1-1h6c.69,0,1,.31,1,1Z"/>
+</g>
+</g>
+</svg>
