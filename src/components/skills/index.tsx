@@ -11,7 +11,7 @@ const skills: Skill[] = [
   {
     name: 'Linux',
     icon: 'img/lpic-1-skill-icon.png',
-    description: ['LPIC-1 certified', 'System administration', 'Kali Linux'],
+    description: ['LPIC-1 certified', 'System administration', 'Kali Linux', 'Ubuntu', 'Debian'],
   },
   {
     name: 'IT Security',
