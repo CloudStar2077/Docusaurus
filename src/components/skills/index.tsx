@@ -29,6 +29,7 @@ const skills: Skill[] = [
     icon: '/Docusaurus/img/network.svg',
     description: [
       'Router & firewall configuration',
+      'Subnetting and IP addressing',
       'VoIP setup and maintenance',
       'NAS server management',
       'Network troubleshooting',
